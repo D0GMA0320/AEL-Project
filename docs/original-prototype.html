@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>악센트 리스닝 코치</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: one narrow working column; a four-step strip on top, one task per screen, results as a comparison table. */
+:root{
+  --bg:#f2f4f6; --surface:#ffffff; --ink:#101b26; --muted:#556575; --line:#d8dfe5;
+  --hi:#ffd84d; --hi-ink:#101b26;
+  --good:#17784a; --good-bg:#e3f4ea; --bad:#b3261e; --bad-bg:#fbe7e5;
+  --c-us:#2b59c3; --c-uk:#c2410c; --c-au:#0b7a75;
+  --font-body:"Noto Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"DM Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1620; --surface:#16212d; --ink:#e8eef4; --muted:#93a5b6; --line:#27384a;
+    --hi:#e6bf2e; --hi-ink:#101b26;
+    --good:#52c68a; --good-bg:#12301f; --bad:#ff8a80; --bad-bg:#3a1b19;
+    --c-us:#7fa2f5; --c-uk:#f59a64; --c-au:#4fd1c5;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1620; --surface:#16212d; --ink:#e8eef4; --muted:#93a5b6; --line:#27384a;
+  --hi:#e6bf2e; --hi-ink:#101b26;
+  --good:#52c68a; --good-bg:#12301f; --bad:#ff8a80; --bad-bg:#3a1b19;
+  --c-us:#7fa2f5; --c-uk:#f59a64; --c-au:#4fd1c5;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:24px 16px 64px;display:flex;flex-direction:column;gap:20px}
+h1{font-size:26px;line-height:1.25;letter-spacing:-0.02em;margin:0;text-wrap:balance}
+h2{font-size:18px;line-height:1.35;margin:0 0 8px;letter-spacing:-0.01em;text-wrap:balance}
+h3{font-size:15px;margin:0 0 6px}
+p{margin:0}
+.sub{color:var(--muted);font-size:14px}
+.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+header{display:flex;flex-direction:column;gap:6px}
+.eyebrow{font-family:var(--font-mono);font-size:12px;color:var(--muted);letter-spacing:.04em}
+.steps{display:flex;gap:6px;flex-wrap:wrap}
+.steps span{font-family:var(--font-mono);font-size:12px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.steps span.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.steps span.done{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:14px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media (max-width:520px){.grid3{grid-template-columns:1fr}}
+label.pick{display:block;cursor:pointer}
+label.pick input{position:absolute;opacity:0;pointer-events:none}
+label.pick .box{display:flex;flex-direction:column;gap:2px;border:1.5px solid var(--line);border-radius:10px;padding:12px;height:100%;background:var(--surface)}
+label.pick input:checked + .box{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+label.pick input:focus-visible + .box{outline:3px solid var(--hi);outline-offset:2px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.tag{font-family:var(--font-mono);font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.tag.ok{color:var(--good);border-color:var(--good)}
+.tag.warn{color:var(--bad);border-color:var(--bad)}
+select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+select:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+textarea{width:100%;min-height:92px;resize:vertical;line-height:1.5}
+.field{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}
+button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:9px 16px;font-weight:500}
+button:hover:not(:disabled){border-color:var(--ink)}
+button:disabled{opacity:.45;cursor:not-allowed}
+button.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button.ghost{background:transparent}
+.note{font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding:2px 0 2px 10px}
+.note.warn{border-left-color:var(--hi)}
+.q{display:flex;flex-direction:column;gap:8px;padding-top:14px;border-top:1px solid var(--line)}
+.q:first-of-type{border-top:0;padding-top:0}
+.q .qt{font-weight:500}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1px solid var(--line);border-radius:8px;cursor:pointer;background:var(--bg)}
+.opt input{margin-top:6px}
+.opt.right{background:var(--good-bg);border-color:var(--good)}
+.opt.wrong{background:var(--bad-bg);border-color:var(--bad)}
+.why{font-size:14px;color:var(--muted)}
+.script{font-size:15px;line-height:1.8;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.ko{font-size:15px;color:var(--muted)}
+.sent{font-size:22px;line-height:1.55;letter-spacing:-0.005em;font-weight:500}
+.blank{background:var(--hi);color:var(--hi-ink);border-radius:4px;padding:0 10px;display:inline-block;min-width:64px;text-align:center}
+.blank.filled{min-width:0}
+.timer{height:8px;background:var(--line);border-radius:999px;overflow:hidden}
+.timer i{display:block;height:100%;width:100%;background:var(--ink)}
+.timer.low i{background:var(--bad)}
+.choices{display:grid;gap:8px}
+.choice{display:flex;gap:12px;align-items:center;text-align:left;padding:12px 14px;font-size:17px}
+.choice kbd{font-family:var(--font-mono);font-size:12px;border:1px solid var(--line);border-radius:4px;padding:0 6px;color:var(--muted)}
+.choice.right{background:var(--good-bg);border-color:var(--good)}
+.choice.wrong{background:var(--bad-bg);border-color:var(--bad)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media (max-width:520px){.tiles{grid-template-columns:1fr}}
+.tile{border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--bg)}
+.tile b{display:block;font-family:var(--font-mono);font-size:26px;line-height:1.2;font-weight:500}
+.tile span{font-size:13px;color:var(--muted)}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:14px}
+th,td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:12px;color:var(--muted);font-weight:500}
+td.num{font-family:var(--font-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.bar{display:inline-block;height:8px;border-radius:4px;vertical-align:middle;margin-right:8px}
+.errs{display:flex;flex-direction:column;gap:6px}
+.err{display:grid;grid-template-columns:110px 1fr 28px;gap:10px;align-items:center;font-size:14px}
+.err .track{height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.err .track i{display:block;height:100%;background:var(--ink)}
+.insight{background:var(--hi);color:var(--hi-ink);border-radius:10px;padding:12px 14px;font-weight:500}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main id="app"></main>
+
+<script>
+"use strict";
+/* ---------- Content (original sample passage, written for this prototype) ---------- */
+const PASSAGE = [
+  "Good morning, graduates.",
+  "When I was your age, I believed that success came from having a plan.",
+  "I had a five-year plan, a ten-year plan, and a list of people I wanted to impress.",
+  "Then, in my second year of work, the company I joined closed down.",
+  "I remember sitting on a bench outside the office, holding a box of my things, and feeling completely lost.",
+  "But that afternoon taught me something no classroom ever did.",
+  "The people who helped me were not the ones I had tried to impress.",
+  "They were the ones I had simply been kind to.",
+  "So here is my advice.",
+  "Make fewer plans and more friends.",
+  "Stay curious about things that nobody is grading.",
+  "And when your own plan falls apart, as it surely will, remember that a closed door is often just a change of direction.",
+  "Congratulations, and thank you."
+];
+const FULL = PASSAGE.join(" ");
+
+const LQ = [
+  { q:"What happened to the speaker in the second year of work?",
+    o:["She was promoted.","The company closed down.","She moved abroad.","She quit to study."], a:1,
+    tag:"청취·세부정보", why:"\"the company I joined closed down\"에서 확인됩니다." },
+  { q:"According to the speaker, who helped her after that afternoon?",
+    o:["People she had tried to impress","Her professors","People she had been kind to","Her former classmates"], a:2,
+    tag:"청취·세부정보", why:"\"They were the ones I had simply been kind to.\" 부분입니다. 앞 문장의 부정(not the ones I had tried to impress)을 놓치면 오답을 고르기 쉽습니다." },
+  { q:"What is the speaker's main advice to the graduates?",
+    o:["Write a ten-year plan.","Impress successful people.","Make fewer plans and more friends.","Avoid being graded."], a:2,
+    tag:"청취·화자 의도", why:"\"So here is my advice.\" 다음 문장이 핵심 조언입니다." },
+  { q:"What does the speaker mean by \"a closed door is often just a change of direction\"?",
+    o:["Doors should stay locked.","A setback can lead to a new path.","Offices should move to new places.","Plans always succeed."], a:1,
+    tag:"청취·화자 의도", why:"비유 표현입니다. 실패나 좌절이 방향 전환의 계기가 될 수 있다는 뜻입니다." }
+];
+
+/* correct answer is always opts[0]; options are shuffled at run time */
+const CL = [
+  { ko:"나는 그 시절 성공이 계획을 세우는 데서 온다고 믿었다.",
+    pre:"When I was your age, I ", post:" that success came from having a plan.",
+    opts:["believed","believe","have believed"], tag:"시제",
+    why:"\"When I was your age\"가 과거 시점을 정하므로 과거형 believed가 맞습니다." },
+  { ko:"나를 도와준 사람들은 내가 감동시키려 했던 사람들이 아니었다.",
+    pre:"The people who helped me ", post:" not the ones I had tried to impress.",
+    opts:["were","was","is"], tag:"수일치",
+    why:"주어 The people이 복수이고 시점이 과거이므로 were입니다. 관계절(who helped me)에 끌려 단수로 받지 않도록 주의하세요." },
+  { ko:"그들은 내가 그저 친절하게 대했던 사람들이었다.",
+    pre:"They were the ones I ", post:" simply been kind to.",
+    opts:["had","have","was"], tag:"시제",
+    why:"그들이 도와준 시점(과거)보다 먼저 일어난 일이므로 과거완료 had been이 맞습니다." },
+  { ko:"계획은 줄이고 친구는 늘려라.",
+    pre:"Make fewer plans and more ", post:".",
+    opts:["friends","friend","a friend"], tag:"단복수",
+    why:"fewer, more가 셀 수 있는 복수 대상을 비교하므로 복수형 friends입니다." },
+  { ko:"아무도 점수를 매기지 않는 것들에 호기심을 유지하라.",
+    pre:"Stay curious about things that nobody ", post:" grading.",
+    opts:["is","are","be"], tag:"수일치",
+    why:"nobody는 단수로 취급하므로 is입니다. 바로 앞의 things(복수)에 끌리지 않도록 주의하세요." },
+  { ko:"나는 사무실 밖 벤치에 앉아 있던 것을 기억한다.",
+    pre:"I remember ", post:" on a bench outside the office.",
+    opts:["sitting","to sit","sat"], tag:"준동사",
+    why:"remember + -ing는 \"이미 한 일을 기억한다\"는 뜻입니다. remember to V는 \"~할 것을 잊지 않는다\"가 되어 의미가 달라집니다." }
+];
+
+const ACC = {
+  US:{ name:"미국", lang:"en-US", color:"var(--c-us)" },
+  UK:{ name:"영국", lang:"en-GB", color:"var(--c-uk)" },
+  AU:{ name:"호주", lang:"en-AU", color:"var(--c-au)" }
+};
+const TAGS = ["청취·세부정보","청취·화자 의도","시제","수일치","단복수","준동사","시간 초과"];
+
+/* ---------- Helpers ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle = a => { a = a.slice(); for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+const pct = (a,b) => b ? Math.round(a/b*100) : null;
+
+/* ---------- Speech ---------- */
+let voices = [];
+const hasTTS = (() => { try { return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window; } catch(e){ return false; } })();
+function loadVoices(){ try { voices = speechSynthesis.getVoices() || []; } catch(e){ voices = []; } }
+if (hasTTS) {
+  loadVoices();
+  try { speechSynthesis.onvoiceschanged = () => { loadVoices(); if (S.step === "setup") render(); else refreshVoiceNote(); }; } catch(e){}
+}
+const norm = l => String(l||"").replace("_","-").toLowerCase();
+function pickVoice(lang){
+  const exact = voices.filter(v => norm(v.lang) === lang.toLowerCase());
+  if (exact.length) return { v:exact[0], exact:true };
+  const en = voices.filter(v => norm(v.lang).startsWith("en"));
+  return { v:en[0] || null, exact:false };
+}
+function speak(text, lang, rate, onend){
+  if (!hasTTS) return false;
+  try {
+    speechSynthesis.cancel();
+    const { v } = pickVoice(lang);
+    const parts = text.match(/[^.!?]+[.!?]*/g) || [text];
+    parts.forEach((p,i) => {
+      const u = new SpeechSynthesisUtterance(p.trim());
+      u.lang = lang; if (v) u.voice = v; u.rate = rate;
+      if (i === parts.length-1) u.onend = () => onend && onend();
+      u.onerror = e => { if (e.error !== "interrupted" && e.error !== "canceled") onend && onend(); };
+      speechSynthesis.speak(u);
+    });
+    return true;
+  } catch(e){ return false; }
+}
+function stopSpeech(){ if (hasTTS) { try { speechSynthesis.cancel(); } catch(e){} } }
+function voiceNote(key){
+  if (!hasTTS) return { cls:"warn", text:"이 브라우저는 음성 합성을 지원하지 않습니다. 크롬이나 사파리에서 열어 주세요." };
+  const lang = ACC[key].lang;
+  const { v, exact } = pickVoice(lang);
+  if (exact) return { cls:"ok", text:"음성 있음: " + v.name };
+  if (v) return { cls:"warn", text:"이 기기에 " + ACC[key].name + " 음성이 없어 " + v.name + "(" + v.lang + ")로 대체됩니다." };
+  return { cls:"warn", text:"사용할 수 있는 영어 음성이 없습니다." };
+}
+
+/* ---------- State ---------- */
+const S = {
+  step:"setup", accent:"AU", rate:"1", once:"0", limit:"3", custom:"",
+  sessions:[], run:null
+};
+function newRun(){
+  S.run = {
+    accent:S.accent, rate:parseFloat(S.rate), once:S.once==="1", limit:parseInt(S.limit,10),
+    plays:0, playing:false, lAns:[null,null,null,null], lDone:false,
+    cl: CL.map(it => { const opts = shuffle(it.opts); return { ...it, shown:opts, ans:opts.indexOf(it.opts[0]) }; }),
+    ci:0, fb:null, cRes:[], t0:0
+  };
+}
+let timerId = null;
+function clearTimer(){ if (timerId) { clearInterval(timerId); timerId = null; } }
+
+/* ---------- Views ---------- */
+function stepsBar(){
+  const order = ["setup","listen","cloze","report"];
+  const names = { setup:"1 설정", listen:"2 듣기", cloze:"3 마스킹", report:"4 리포트" };
+  const idx = order.indexOf(S.step);
+  return '<div class="steps" aria-label="진행 단계">' + order.map((k,i) =>
+    '<span class="' + (i===idx?"on":(i<idx?"done":"")) + '">' + names[k] + '</span>').join("") + '</div>';
+}
+function head(){
+  return '<header><div class="eyebrow">APPLIED ENGLISH LINGUISTICS · PROTOTYPE</div>' +
+    '<h1>악센트 리스닝 코치</h1>' +
+    '<p class="sub">같은 연설 지문을 악센트별로 듣고, 어느 악센트에서 어떤 유형으로 틀리는지 진단합니다.</p>' +
+    stepsBar() + '</header>';
+}
+
+function viewSetup(){
+  const accCards = Object.keys(ACC).map(k => {
+    const n = voiceNote(k);
+    return '<label class="pick"><input type="radio" name="accent" value="'+k+'"'+(S.accent===k?" checked":"")+'>' +
+      '<span class="box"><b><i class="dot" style="background:'+ACC[k].color+'"></i>'+ACC[k].name+' ('+k+')</b>' +
+      '<span class="sub">'+esc(n.text)+'</span></span></label>';
+  }).join("");
+  return head() +
+  '<section class="card"><h2>악센트와 조건 선택</h2>' +
+    '<div class="grid3" role="radiogroup" aria-label="악센트">'+accCards+'</div>' +
+    '<div class="row">' +
+      '<label class="field">재생 속도<select id="rate"><option value="0.85"'+(S.rate==="0.85"?" selected":"")+'>0.85x</option><option value="1"'+(S.rate==="1"?" selected":"")+'>1.0x</option><option value="1.2"'+(S.rate==="1.2"?" selected":"")+'>1.2x</option></select></label>' +
+      '<label class="field">재생 횟수<select id="once"><option value="0"'+(S.once==="0"?" selected":"")+'>제한 없음</option><option value="1"'+(S.once==="1"?" selected":"")+'>1회만 (시험 모드)</option></select></label>' +
+      '<label class="field">마스킹 제한 시간<select id="limit"><option value="3"'+(S.limit==="3"?" selected":"")+'>3초</option><option value="5"'+(S.limit==="5"?" selected":"")+'>5초</option><option value="0"'+(S.limit==="0"?" selected":"")+'>제한 없음</option></select></label>' +
+    '</div>' +
+    '<div class="row"><button class="primary" data-act="start">이 조건으로 시작</button>' +
+    '<button data-act="preview">음성 미리 듣기</button></div>' +
+    '<p class="note warn">음성은 브라우저에 내장된 합성 음성을 사용합니다. 기기에 해당 악센트 음성이 없으면 다른 영어 음성으로 대체되므로, 악센트 비교 결과는 위 안내를 확인한 뒤 해석하세요.</p>' +
+  '</section>' +
+  '<section class="card"><h2>내 지문 듣기</h2>' +
+    '<p class="sub">로컬 트랜스크립션 결과나 TED·연설 스크립트를 붙여 넣으면 선택한 악센트로 읽어 줍니다. 문항 자동 생성은 다음 단계에서 붙일 부분입니다.</p>' +
+    '<textarea id="custom" placeholder="여기에 영어 텍스트를 붙여 넣으세요" aria-label="내 지문">'+esc(S.custom)+'</textarea>' +
+    '<div class="row"><button data-act="playcustom">내 지문 재생</button><button class="ghost" data-act="stop">정지</button></div>' +
+  '</section>' +
+  '<p class="sub">지문은 이 프로토타입용으로 직접 쓴 졸업식 연설 예시문이며, 실제 연설의 원문이 아닙니다.</p>';
+}
+
+function viewListen(){
+  const r = S.run, a = ACC[r.accent], n = voiceNote(r.accent);
+  const qs = LQ.map((q,qi) => {
+    const opts = q.o.map((t,oi) => {
+      let cls = "opt";
+      if (r.lDone) { if (oi === q.a) cls += " right"; else if (r.lAns[qi] === oi) cls += " wrong"; }
+      return '<label class="'+cls+'"><input type="radio" name="q'+qi+'" value="'+oi+'"'+(r.lAns[qi]===oi?" checked":"")+(r.lDone?" disabled":"")+'><span>'+esc(t)+'</span></label>';
+    }).join("");
+    const res = r.lDone ? '<p class="why"><span class="tag '+(r.lAns[qi]===q.a?"ok":"warn")+'">'+(r.lAns[qi]===q.a?"정답":"오답")+'</span> '+esc(q.why)+'</p>' : "";
+    return '<div class="q"><p class="qt"><span class="mono">Q'+(qi+1)+'.</span> '+esc(q.q)+'</p>'+opts+res+'</div>';
+  }).join("");
+  return head() +
+  '<section class="card"><h2><i class="dot" style="background:'+a.color+'"></i>'+a.name+' 악센트 듣기</h2>' +
+    '<div class="row"><button class="primary" id="playbtn" data-act="play">▶ 재생</button><button data-act="stop">■ 정지</button>' +
+    '<span class="tag" id="playstat"></span></div>' +
+    '<p class="note '+(n.cls==="ok"?"":"warn")+'" id="vnote">'+esc(n.text)+'</p>' +
+    qs +
+    (r.lDone ? '<div><h3>스크립트</h3><div class="script">'+esc(FULL)+'</div></div><button class="primary" data-act="tocloze">마스킹 퀴즈로 이동</button>'
+             : '<button class="primary" data-act="grade">채점하기</button>') +
+  '</section>';
+}
+
+function viewCloze(){
+  const r = S.run, it = r.cl[r.ci], fb = r.fb;
+  const filled = fb ? esc(it.shown[it.ans]) : "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+  const sentence = '<p class="sent">'+esc(it.pre)+'<span class="blank'+(fb?" filled":"")+'">'+filled+'</span>'+esc(it.post)+'</p>';
+  const choices = it.shown.map((t,i) => {
+    let cls = "choice";
+    if (fb) { if (i === it.ans) cls += " right"; else if (i === fb.picked) cls += " wrong"; }
+    return '<button class="'+cls+'" data-act="pick" data-i="'+i+'"'+(fb?" disabled":"")+'><kbd>'+(i+1)+'</kbd>'+esc(t)+'</button>';
+  }).join("");
+  const timer = r.limit ? '<div class="timer" id="timer" aria-hidden="true"><i id="timerbar"></i></div>' : "";
+  let feed = "";
+  if (fb) {
+    const ok = fb.picked === it.ans;
+    feed = '<div><p><span class="tag '+(ok?"ok":"warn")+'">'+(fb.picked===-1?"시간 초과":(ok?"정답":"오답"))+'</span> <span class="tag">'+esc(it.tag)+'</span></p>' +
+      '<p class="why">'+esc(it.why)+'</p></div>' +
+      '<button class="primary" data-act="next">'+(r.ci===r.cl.length-1?"결과 보기":"다음 문장")+'</button>';
+  }
+  return head() +
+  '<section class="card"><div class="row" style="justify-content:space-between"><h2 style="margin:0">문맥 속 문법 고르기</h2>' +
+    '<span class="tag mono">'+(r.ci+1)+' / '+r.cl.length+'</span></div>' +
+    '<p class="ko">'+esc(it.ko)+'</p>' + sentence + timer +
+    '<div class="choices">'+choices+'</div>' + feed +
+    (fb ? "" : '<p class="sub">키보드 1·2·3 으로도 고를 수 있습니다.</p>') +
+  '</section>';
+}
+
+function agg(){
+  const out = {};
+  Object.keys(ACC).forEach(k => {
+    const ss = S.sessions.filter(s => s.accent === k);
+    const o = { n:ss.length, l:0, lT:0, c:0, cT:0, ms:[], miss:{} };
+    ss.forEach(s => { o.l+=s.l; o.lT+=s.lT; o.c+=s.c; o.cT+=s.cT; if (s.avgMs) o.ms.push(s.avgMs);
+      Object.keys(s.miss).forEach(t => o.miss[t] = (o.miss[t]||0) + s.miss[t]); });
+    out[k] = o;
+  });
+  return out;
+}
+function topMiss(m){
+  const e = Object.entries(m).sort((a,b) => b[1]-a[1]);
+  return e.length ? e[0][0] + " " + e[0][1] + "건" : "없음";
+}
+
+function viewReport(){
+  const last = S.sessions[S.sessions.length-1], A = agg();
+  const hasSample = S.sessions.some(s => s.sample);
+  const lastMiss = Object.entries(last.miss).sort((a,b) => b[1]-a[1]);
+  const maxMiss = lastMiss.length ? lastMiss[0][1] : 1;
+  const errs = lastMiss.length ? lastMiss.map(([t,c]) =>
+    '<div class="err"><span>'+esc(t)+'</span><span class="track"><i style="width:'+(c/maxMiss*100)+'%"></i></span><span class="mono">'+c+'</span></div>').join("")
+    : '<p class="sub">이번 회차는 오답이 없습니다.</p>';
+
+  const rows = Object.keys(ACC).map(k => {
+    const o = A[k]; const lp = pct(o.l,o.lT), cp = pct(o.c,o.cT);
+    const ms = o.ms.length ? Math.round(o.ms.reduce((a,b)=>a+b,0)/o.ms.length/100)/10 + "초" : "-";
+    return '<tr><td><i class="dot" style="background:'+ACC[k].color+'"></i>'+ACC[k].name+'</td>' +
+      '<td class="num">'+o.n+'</td>' +
+      '<td class="num">'+(lp===null?"-":'<span class="bar" style="width:'+Math.max(lp*0.6,2)+'px;background:'+ACC[k].color+'"></span>'+lp+"%")+'</td>' +
+      '<td class="num">'+(cp===null?"-":cp+"%")+'</td>' +
+      '<td class="num">'+ms+'</td>' +
+      '<td>'+(o.n?esc(topMiss(o.miss)):"-")+'</td></tr>';
+  }).join("");
+
+  const done = Object.keys(ACC).filter(k => A[k].lT > 0);
+  let insight = "다른 악센트로도 풀어 비교해 보세요. 악센트가 하나뿐이면 차이를 해석할 수 없습니다.";
+  if (done.length >= 2) {
+    const sorted = done.slice().sort((a,b) => pct(A[a].l,A[a].lT) - pct(A[b].l,A[b].lT));
+    const lo = sorted[0], hi = sorted[sorted.length-1];
+    const d = pct(A[hi].l,A[hi].lT) - pct(A[lo].l,A[lo].lT);
+    insight = d > 0
+      ? "듣기 정답률이 가장 낮은 악센트는 " + ACC[lo].name + "(" + pct(A[lo].l,A[lo].lT) + "%)이고, " + ACC[hi].name + "(" + pct(A[hi].l,A[hi].lT) + "%)와 " + d + "%p 차이가 납니다. " + ACC[lo].name + " 악센트 음성을 더 반복해서 듣는 것을 추천합니다."
+      : "악센트 사이에 듣기 정답률 차이가 없습니다. 속도를 1.2x로 높이거나 1회 재생 모드로 난도를 올려 보세요.";
+  }
+  const ct = last.cT ? Math.round(last.avgMs/100)/10 : 0;
+  return head() +
+  '<section class="card"><h2>'+(last.sample?'예시 결과 ('+ACC[last.accent].name+')':'이번 회차 ('+ACC[last.accent].name+')')+'</h2>' +
+    '<div class="tiles"><div class="tile"><b>'+last.l+' / '+last.lT+'</b><span>듣기 정답</span></div>' +
+    '<div class="tile"><b>'+last.c+' / '+last.cT+'</b><span>마스킹 정답</span></div>' +
+    '<div class="tile"><b>'+ct+'초</b><span>마스킹 평균 응답 시간</span></div></div>' +
+    '<div><h3>오답 유형</h3><div class="errs">'+errs+'</div></div></section>' +
+  '<section class="card"><h2>악센트별 비교</h2>' +
+    '<div class="insight">'+esc(insight)+'</div>' +
+    '<div class="tablewrap"><table><thead><tr><th>악센트</th><th>회차</th><th>듣기 정답률</th><th>마스킹 정답률</th><th>평균 응답</th><th>가장 많은 오답</th></tr></thead><tbody>'+rows+'</tbody></table></div>' +
+    '<p class="note warn">문항 수가 적어 한 번의 결과로 결론을 내릴 수 없습니다. 같은 지문을 반복해 풀면 지문을 외우게 되므로, 실제 서비스에서는 악센트마다 다른 지문을 써야 합니다.'+(hasSample?" 표에는 예시 데이터가 포함되어 있습니다.":"")+'</p>' +
+    '<div class="row"><button class="primary" data-act="again">다른 악센트로 다시 풀기</button>' +
+    '<button data-act="sample">예시 결과 채우기</button>' +
+    (S.sessions.length ? '<button class="ghost" data-act="clear">기록 지우기</button>' : "") + '</div>' +
+  '</section>';
+}
+
+/* ---------- Render ---------- */
+function render(){
+  clearTimer();
+  const app = $("#app");
+  app.innerHTML = S.step==="setup" ? viewSetup() : S.step==="listen" ? viewListen() : S.step==="cloze" ? viewCloze() : viewReport();
+  if (S.step === "listen") setPlayState(S.run.playing);
+  if (S.step === "cloze" && !S.run.fb) startTimer();
+  window.scrollTo(0,0);
+}
+function refreshVoiceNote(){
+  const el = $("#vnote"); if (!el || !S.run) return;
+  el.textContent = voiceNote(S.run.accent).text;
+}
+function setPlayState(on){
+  const r = S.run; if (!r) return;
+  r.playing = on;
+  const b = $("#playbtn"), st = $("#playstat"); if (!b || !st) return;
+  const used = r.once && r.plays >= 1;
+  b.disabled = on || used;
+  b.textContent = on ? "재생 중…" : (used ? "재생 완료" : "▶ 재생");
+  st.textContent = "재생 " + r.plays + "회" + (r.once ? " / 1회 제한" : "");
+}
+
+/* ---------- Cloze timer ---------- */
+function startTimer(){
+  const r = S.run; if (!r.limit) { r.t0 = performance.now(); return; }
+  const bar = $("#timerbar"), wrap = $("#timer"); if (!bar) return;
+  r.t0 = performance.now();
+  const total = r.limit * 1000;
+  timerId = setInterval(() => {
+    const left = total - (performance.now() - r.t0);
+    if (left <= 0) { clearTimer(); answerCloze(-1); return; }
+    bar.style.width = (left/total*100) + "%";
+    if (wrap) wrap.classList.toggle("low", left < total*0.34);
+  }, 50);
+}
+function answerCloze(i){
+  const r = S.run; if (r.fb) return;
+  clearTimer();
+  const it = r.cl[r.ci], ms = performance.now() - r.t0, ok = i === it.ans;
+  r.fb = { picked:i };
+  r.cRes.push({ ok, ms, tag: ok ? null : (i === -1 ? "시간 초과" : it.tag) });
+  render();
+}
+
+/* ---------- Actions ---------- */
+function finishRun(){
+  const r = S.run, miss = {};
+  let l = 0;
+  LQ.forEach((q,i) => { if (r.lAns[i] === q.a) l++; else miss[q.tag] = (miss[q.tag]||0) + 1; });
+  let c = 0, ms = 0;
+  r.cRes.forEach(x => { ms += x.ms; if (x.ok) c++; else miss[x.tag] = (miss[x.tag]||0) + 1; });
+  S.sessions.push({ accent:r.accent, l, lT:LQ.length, c, cT:CL.length, miss, avgMs: ms / r.cRes.length, sample:false });
+}
+function nextAccent(){
+  const keys = Object.keys(ACC), i = keys.indexOf(S.run ? S.run.accent : S.accent);
+  return keys[(i+1) % keys.length];
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-act]"); if (!b) return;
+  const act = b.dataset.act;
+  if (act === "start") { stopSpeech(); newRun(); S.step = "listen"; render(); }
+  else if (act === "preview") { speak("Good morning, graduates. When I was your age, I believed that success came from having a plan.", ACC[S.accent].lang, parseFloat(S.rate), null); }
+  else if (act === "playcustom") { const t = S.custom.trim(); if (t) speak(t, ACC[S.accent].lang, parseFloat(S.rate), null); }
+  else if (act === "stop") { stopSpeech(); if (S.run) setPlayState(false); }
+  else if (act === "play") {
+    const r = S.run; if (r.playing || (r.once && r.plays >= 1)) return;
+    r.plays++; setPlayState(true);
+    if (!speak(FULL, ACC[r.accent].lang, r.rate, () => setPlayState(false))) { setPlayState(false); }
+  }
+  else if (act === "grade") { stopSpeech(); S.run.playing = false; S.run.lDone = true; render(); }
+  else if (act === "tocloze") { S.step = "cloze"; render(); }
+  else if (act === "pick") { answerCloze(parseInt(b.dataset.i,10)); }
+  else if (act === "next") {
+    const r = S.run;
+    if (r.ci === r.cl.length-1) { finishRun(); S.step = "report"; }
+    else { r.ci++; r.fb = null; }
+    render();
+  }
+  else if (act === "again") { S.accent = nextAccent(); S.step = "setup"; render(); }
+  else if (act === "sample") {
+    if (!S.sessions.some(s => s.sample)) {
+      S.sessions.unshift(
+        { accent:"US", l:4, lT:4, c:5, cT:6, miss:{"시제":1}, avgMs:1500, sample:true },
+        { accent:"UK", l:3, lT:4, c:5, cT:6, miss:{"청취·화자 의도":1,"수일치":1}, avgMs:1700, sample:true },
+        { accent:"AU", l:2, lT:4, c:4, cT:6, miss:{"청취·세부정보":1,"청취·화자 의도":1,"시제":1,"시간 초과":1}, avgMs:2100, sample:true }
+      );
+    }
+    if (S.step !== "report") { S.step = "report"; }
+    if (S.sessions.length && !S.sessions.some(s => !s.sample)) { /* only samples: still render report from last sample */ }
+    render();
+  }
+  else if (act === "clear") { S.sessions = []; S.step = "setup"; render(); }
+});
+document.addEventListener("change", e => {
+  const t = e.target;
+  if (t.name === "accent") { S.accent = t.value; }
+  else if (t.id === "rate") S.rate = t.value;
+  else if (t.id === "once") S.once = t.value;
+  else if (t.id === "limit") S.limit = t.value;
+  else if (t.name && /^q\d$/.test(t.name) && S.run) { S.run.lAns[parseInt(t.name.slice(1),10)] = parseInt(t.value,10); }
+});
+document.addEventListener("input", e => { if (e.target.id === "custom") S.custom = e.target.value; });
+document.addEventListener("keydown", e => {
+  if (S.step === "cloze" && S.run && !S.run.fb && ["1","2","3"].includes(e.key)) {
+    const i = parseInt(e.key,10) - 1;
+    if (i < S.run.cl[S.run.ci].shown.length) answerCloze(i);
+  }
+});
+
+render();
+</script>
+</body>
+</html>
