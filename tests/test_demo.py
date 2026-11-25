@@ -74,4 +74,21 @@ class DemoTests(unittest.TestCase):
         with self.assertRaises(ValueError):DemoSecurity('short')
         for _ in range(60):self.sec.login('incorrect')
         self.assertEqual(self.sec.login('test-classroom-code')[0],429)
+    def test_pronunciation_requires_login_consent_valid_audio_and_budget(self):
+        from test_pronunciation import request
+        body=request()
+        self.assertEqual(self.request('/api/pronunciation',body)[0],401)
+        cookie=self.login()
+        with patch('server.pronunciation.assess',return_value={'scores':{'AccuracyScore':80}}) as provider:
+            self.assertEqual(self.request('/api/pronunciation',{**body,'consent':False},cookie)[0],400)
+            self.assertEqual(self.request('/api/pronunciation',{**body,'audio':'invalid'},cookie)[0],400)
+            provider.assert_not_called()
+            for _ in range(2):self.assertEqual(self.request('/api/pronunciation',body,cookie)[0],200)
+            self.assertEqual(self.request('/api/pronunciation',body,cookie)[0],429)
+            self.assertEqual(provider.call_count,2)
+    def test_old_content_version_cannot_receive_new_question_coaching(self):
+        cookie=self.login()
+        with patch('server.call_openai') as provider:
+            self.assertEqual(self.request('/api/coach',{'pack':'teps','questionId':'te-1','contentVersion':'3.0','learnerQuestion':'Why?'},cookie)[0],400)
+            provider.assert_not_called()
 if __name__=='__main__':unittest.main()

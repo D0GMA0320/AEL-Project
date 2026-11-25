@@ -11,7 +11,7 @@ def package():
     out = ROOT / 'dist'
     out.mkdir(exist_ok=True)
     path = out / 'AEL-Classroom.zip'
-    files = [ROOT / p for p in ['index.html', 'studio.html', 'server.py', 'demo_security.py', 'start-internet-demo.cmd', 'stop-internet-demo.cmd', 'start-classroom.cmd', 'configure-services.cmd', 'prepare-classroom.cmd', '.env.example', 'README.md']]
+    files = [ROOT / p for p in ['index.html', 'studio.html', 'server.py', 'demo_security.py', 'pronunciation.py', 'start-internet-demo.cmd', 'stop-internet-demo.cmd', 'start-classroom.cmd', 'configure-services.cmd', 'prepare-classroom.cmd', '.env.example', 'README.md']]
     for directory in ['assets', 'docs', 'tools', 'tests']:
         files.extend(p for p in (ROOT / directory).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix not in {'.pyc'} and not any(x.startswith('.') for x in p.relative_to(ROOT).parts))
     with ZipFile(path, 'w', ZIP_DEFLATED) as archive:

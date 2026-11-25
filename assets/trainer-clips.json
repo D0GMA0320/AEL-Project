@@ -1,136 +1,145 @@
 {
+  "version": "3.2",
   "lessons": [
     {
-      "id": "t2-1-main",
-      "script": "A: You're coming to the retirement party, aren't you?\nB: A. It is printed on the invitation.\nB: B. I have a client dinner that evening.\nB: C. The party was enjoyable."
+      "id": "t2-1-main-r32",
+      "script": "Woman: You're coming to the retirement party, aren't you?\nMan: A. The invitation arrived this morning.\nMan: B. I have a client dinner that evening.\nMan: C. The party was enjoyable."
     },
     {
       "id": "t2-1-focus",
       "script": "I have a client dinner that evening."
     },
     {
-      "id": "t2-1-retry",
-      "script": "A: Can you join our lunch on Friday?\nB: I will be on a business trip that day."
+      "id": "t2-1-retry-r32",
+      "script": "Woman: Will you be joining us for lunch on Friday?\nMan: A. The restaurant is across the street.\nMan: B. I ordered lunch an hour ago.\nMan: C. I'll be away on business that day."
     },
     {
-      "id": "t2-2-main",
-      "script": "A: When will the client meeting begin?\nB: A. At two fifteen, after the briefing.\nB: B. There are fifty people.\nB: C. The meeting room is large."
+      "id": "t2-2-main-r32",
+      "script": "Woman: When will the client meeting begin?\nMan: A. At two fifteen, after the briefing.\nMan: B. There were fifteen people at the briefing.\nMan: C. The meeting room is large."
     },
     {
       "id": "t2-2-focus",
       "script": "At two fifteen, after the briefing."
     },
     {
-      "id": "t2-2-retry",
-      "script": "A: When should we meet the new manager?\nB: At three fifty, after the workshop."
+      "id": "t2-2-retry-r32",
+      "script": "Woman: When are we meeting the new manager?\nMan: A. The manager has a new office.\nMan: B. At three fifty, after the workshop.\nMan: C. About fifty copies, please."
     },
     {
-      "id": "t2-3-main",
-      "script": "A: Would you like me to proofread your proposal?\nB: A. The proposal is on the desk.\nB: B. Yes, the desk is new.\nB: C. A second pair of eyes would help."
+      "id": "t2-3-main-r32",
+      "script": "Woman: Would you like me to proofread your proposal?\nMan: A. The proposal was approved yesterday.\nMan: B. Yes, the printer is out of paper.\nMan: C. A second pair of eyes would help."
     },
     {
       "id": "t2-3-focus",
       "script": "A second pair of eyes would help."
     },
     {
-      "id": "t2-3-retry",
-      "script": "A: Would you like me to check your report?\nB: Another review would be useful."
+      "id": "t2-3-retry-r32",
+      "script": "Woman: Would you like me to look over your report?\nMan: A. Another review would be helpful.\nMan: B. The reporter arrived this morning.\nMan: C. The meeting room is upstairs."
     },
     {
-      "id": "toeic3-main",
-      "script": "Alex: The client meeting was at ten, but it has moved to eleven because the train is delayed.\nMorgan: Should I tell the design team?\nAlex: Yes. Ask them to bring the samples to Room Four instead of Room Two.\nMorgan: I will send an updated invitation now.\nAlex: Please ask everyone to arrive ten minutes early."
+      "id": "toeic3-main-r32",
+      "script": "Woman: The client meeting was scheduled for ten. We've moved it to eleven because the client's train is delayed.\nMan: Should I let the design team know?\nWoman: Yes, please. Ask them to bring the samples to Room Four instead of Room Two.\nMan: I will send an updated invitation now.\nWoman: Thanks. Please ask everyone to arrive ten minutes early."
     },
     {
       "id": "t3-1-focus",
       "script": "Please ask everyone to arrive ten minutes early."
     },
     {
-      "id": "t3-1-retry",
-      "script": "The tour starts at two thirty. Please arrive fifteen minutes early."
+      "id": "t3-1-retry-r32",
+      "script": "Woman: What time does the factory tour start?\nMan: At two thirty. Visitors should arrive fifteen minutes early to collect their passes.\nWoman: Thanks. I'll let the rest of the group know."
     },
     {
-      "id": "t3-2-focus",
-      "script": "It has moved to eleven because the train is delayed."
+      "id": "t3-2-focus-r31",
+      "script": "We've moved it to eleven because the client's train is delayed."
     },
     {
-      "id": "t3-2-retry",
-      "script": "The workshop will begin at noon rather than eleven because the instructor's flight is delayed."
+      "id": "t3-2-retry-r32",
+      "script": "Woman: Is the training workshop still starting at eleven?\nMan: No, we've pushed it back to noon. The instructor's flight has been delayed.\nWoman: All right. I'll update the notice outside the room."
     },
     {
       "id": "t3-3-focus",
       "script": "I will send an updated invitation now."
     },
     {
-      "id": "t3-3-retry",
-      "script": "A: The venue has changed to the library.\nB: I will email the revised directions to all participants."
+      "id": "t3-3-retry-r32",
+      "script": "Woman: We have to move the orientation session to the library. The conference room won't be available.\nMan: In that case, I'll email the revised directions to everyone who registered.\nWoman: Good idea. Please send them this afternoon."
     },
     {
-      "id": "toeic4-main",
-      "script": "Good afternoon, passengers for Flight 417. Boarding has moved from gate B12 to gate C4 because of an aircraft inspection. Boarding begins at four forty-five, fifteen minutes later than planned. Your checked bags will be transferred automatically. Please go directly to gate C4."
+      "id": "toeic4-main-r31",
+      "script": "Attention, passengers traveling on Flight four seventeen. Because of an aircraft inspection, boarding has been moved from gate B twelve to gate C four. Boarding begins at four forty-five, fifteen minutes later than originally scheduled. Your checked bags will be transferred automatically. Please proceed directly to gate C four and have your boarding passes ready."
     },
     {
       "id": "t4-1-focus",
       "script": "Boarding begins at four forty-five."
     },
     {
-      "id": "t4-1-retry",
-      "script": "The bus was scheduled for six ten. It will now leave at six forty."
+      "id": "t4-1-retry-r31",
+      "script": "May I have your attention, please? The express bus to the airport, originally scheduled to depart at six ten, will now leave at six forty. Please remain in the waiting area until boarding is announced."
     },
     {
       "id": "t4-2-focus",
       "script": "The gate has changed because of an aircraft inspection."
     },
     {
-      "id": "t4-2-retry",
-      "script": "The museum entrance has moved to the east side because the main doors are being repaired."
+      "id": "t4-2-retry-r31",
+      "script": "Welcome to the City Museum. While the main doors are being repaired, visitors should use the entrance on the east side of the building. All exhibitions will remain open during our regular hours."
     },
     {
       "id": "t4-3-focus",
       "script": "Your checked bags will be transferred automatically."
     },
     {
-      "id": "t4-3-retry",
-      "script": "Your reservation will be moved to the new hotel automatically. You do not need to contact either hotel."
+      "id": "t4-3-retry-r31",
+      "script": "This is a message for guests with reservations at the Park Hotel. Your booking will be transferred to our Riverside location at no additional charge. The transfer is automatic, so there is no need to contact either hotel. We apologize for the inconvenience."
     },
     {
-      "id": "teps-main",
-      "script": "A: Can you join our study group at the library tomorrow?\nB: I have a lab session until three. Could we start at three thirty instead of two?\nA: That works. I will book a room for three thirty. Please send everyone the new time.\nB: Sure. I will let the group know tonight."
+      "id": "te-1-main-r32",
+      "script": "Woman: Are you free to meet at the library at two tomorrow?\nMan: I have a lab session until three. Could we make it a little later?\nWoman: Sure. Would three thirty work?\nMan: That would be fine. Thanks for being flexible."
     },
     {
       "id": "te-1-focus",
       "script": "I have a lab session until three."
     },
     {
-      "id": "te-1-retry",
-      "script": "A: Can we rehearse at four?\nB: My tutorial ends at four thirty. Could we meet at five?\nWhy does the second speaker request five o'clock?\nA. They have an earlier class.\nB. They need a new room.\nC. They dislike rehearsals.\nD. They want to cancel."
+      "id": "te-1-question-r32",
+      "script": "Narrator: Why does the man suggest a later time?\nNarrator: A. He has a laboratory class.\nNarrator: B. The library closes early.\nNarrator: C. He needs to reserve a room.\nNarrator: D. He has forgotten the meeting place."
     },
     {
-      "id": "te-1-question",
-      "script": "Why does the second speaker suggest a later time?\nA. The library opens late.\nB. The room is full.\nC. They have a laboratory session.\nD. They forgot the meeting."
+      "id": "te-1-retry-r32",
+      "script": "Woman: Can we rehearse our presentation at four?\nMan: My tutorial doesn't finish until four thirty. How about five?\nWoman: Five is fine. I'll check whether the room is free.\nMan: Thanks. I'll see you then.\nNarrator: Why does the man suggest meeting at five?\nNarrator: A. He has a class until four thirty.\nNarrator: B. He needs to prepare the room.\nNarrator: C. He has another rehearsal at five.\nNarrator: D. He wants to cancel the presentation."
+    },
+    {
+      "id": "te-2-main-r32",
+      "script": "Woman: Shall we get the study group together at two tomorrow?\nMan: Could we start at three thirty instead of two? The room isn't available until then.\nWoman: That's fine. I'll reserve it for three thirty.\nMan: Great. See you there."
     },
     {
       "id": "te-2-focus",
       "script": "Could we start at three thirty instead of two?"
     },
     {
-      "id": "te-2-retry",
-      "script": "A: The club meeting was at five, but the room is only free at five forty.\nB: All right. Let us meet at five forty.\nWhat is the agreed time?\nA. 5:00\nB. 5:14\nC. 4:50\nD. 5:40"
+      "id": "te-2-question-r31",
+      "script": "Narrator: When will the study group meet?\nNarrator: A. At two o'clock.\nNarrator: B. At three o'clock.\nNarrator: C. At three thirty.\nNarrator: D. At two thirty."
     },
     {
-      "id": "te-2-question",
-      "script": "When will the study group meet?\nA. 2:00\nB. 3:00\nC. 3:30\nD. 2:30"
+      "id": "te-2-retry-r32",
+      "script": "Woman: I was going to book the club room for five, but someone else is using it until five forty.\nMan: Let's meet at five forty, then.\nWoman: I'll let everyone know.\nMan: Thanks. That works for me.\nNarrator: What is the agreed time?\nNarrator: A. At five o'clock.\nNarrator: B. At five fourteen.\nNarrator: C. At four fifty.\nNarrator: D. At five forty."
+    },
+    {
+      "id": "te-3-main-r32",
+      "script": "Woman: I've booked a room for our study group tomorrow. Could you tell the others?\nMan: Of course. I will let the group know tonight.\nWoman: Please remind them to bring their notes as well.\nMan: Will do."
     },
     {
       "id": "te-3-focus",
       "script": "I will let the group know tonight."
     },
     {
-      "id": "te-3-retry",
-      "script": "A: I have reserved the seminar room. Can you pass the new schedule on to the others?\nB: Yes, I will message them this afternoon.\nWhat will the second speaker do?\nA. Reserve a room\nB. Attend a seminar\nC. Share the updated schedule\nD. Cancel the messages"
+      "id": "te-3-question-r32",
+      "script": "Narrator: What will the man do tonight?\nNarrator: A. Book a room\nNarrator: B. Inform the other members\nNarrator: C. Prepare an experiment\nNarrator: D. Go to the library"
     },
     {
-      "id": "te-3-question",
-      "script": "What will the second speaker do tonight?\nA. Book a room\nB. Inform the other members\nC. Prepare an experiment\nD. Go to the library"
+      "id": "te-3-retry-r32",
+      "script": "Woman: I've reserved the seminar room. Could you pass the revised schedule on to the others?\nMan: Sure. I'll message them this afternoon.\nWoman: Thanks. Make sure they know about the new starting time.\nMan: I will.\nNarrator: What will the man do?\nNarrator: A. Reserve a different room\nNarrator: B. Prepare for a seminar\nNarrator: C. Send the others the revised schedule\nNarrator: D. Cancel the afternoon meeting"
     }
   ]
 }

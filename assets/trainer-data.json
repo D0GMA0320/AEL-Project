@@ -1,7 +1,7 @@
 {
-  "version": "3.0",
+  "version": "3.2",
   "createdAt": "2026-11-25",
-  "provenance": "Original AI-assisted practice drafted in Codex, with teammate LC trainer references and professor feedback. Not official TOEIC/TEPS material. Human teacher review pending. No score prediction.",
+  "provenance": "Original AI-assisted practice revised in Codex on 2026-11-25. Format checked against ETS TOEIC sample directions and TEPS official structure; no official items copied. Teacher review pending. No official score prediction. Speaker labels and spoken questions aligned with explicit Woman/Man roles on 2026-11-25.",
   "packs": [
     {
       "id": "toeic2",
@@ -16,16 +16,16 @@
       "questions": [
         {
           "id": "t2-1",
-          "prompt": "가장 자연스러운 응답은 무엇인가요?",
+          "prompt": "Choose the best response.",
           "options": [
-            "It is printed on the invitation.",
+            "The invitation arrived this morning.",
             "I have a client dinner that evening.",
             "The party was enjoyable."
           ],
           "answer": 1,
           "skill": "inference",
           "evidence": "I have a client dinner that evening.",
-          "explanation": "그날 다른 약속이 있다는 말로 참석하기 어렵다는 뜻을 전합니다. party라는 단어의 반복만으로 답을 고르지 않아요.",
+          "explanation": "그날 저녁 거래처와의 식사 약속이 있어 참석하기 어렵다는 뜻을 간접적으로 전합니다. 행사와 관련된 단어가 들린다는 이유만으로 답을 고르지 않아요.",
           "dictation": "I have a client dinner that evening.",
           "expression": "I have another appointment. 여기서 이 말의 기능은?",
           "choices": [
@@ -36,33 +36,33 @@
           "correct": 0,
           "sound": "client dinner를 한 의미 덩어리로 듣고, THAT evening의 시간 단서에 주목하세요.",
           "retry": {
-            "script": "A: Can you join our lunch on Friday?\nB: I will be on a business trip that day.",
-            "prompt": "What does the second speaker imply?",
+            "script": "Woman: Will you be joining us for lunch on Friday?\nMan: A. The restaurant is across the street.\nMan: B. I ordered lunch an hour ago.\nMan: C. I'll be away on business that day.",
+            "prompt": "Choose the best response.",
             "options": [
-              "They want a later lunch.",
-              "They need directions.",
-              "They cannot attend."
+              "The restaurant is across the street.",
+              "I ordered lunch an hour ago.",
+              "I'll be away on business that day."
             ],
             "answer": 2,
-            "explanation": "출장 일정이 겹쳐 참석하기 어렵다는 간접 응답입니다.",
-            "audioId": "t2-1-retry"
+            "explanation": "금요일에 출장을 간다는 응답은 점심 모임에 참석하기 어렵다는 뜻입니다.",
+            "audioId": "t2-1-retry-r32"
           },
-          "script": "A: You're coming to the retirement party, aren't you?\nB: A. It is printed on the invitation.\nB: B. I have a client dinner that evening.\nB: C. The party was enjoyable.",
-          "audioId": "t2-1-main",
+          "script": "Woman: You're coming to the retirement party, aren't you?\nMan: A. The invitation arrived this morning.\nMan: B. I have a client dinner that evening.\nMan: C. The party was enjoyable.",
+          "audioId": "t2-1-main-r32",
           "dictationAudio": "t2-1-focus"
         },
         {
           "id": "t2-2",
-          "prompt": "가장 자연스러운 응답은 무엇인가요?",
+          "prompt": "Choose the best response.",
           "options": [
             "At two fifteen, after the briefing.",
-            "There are fifty people.",
+            "There were fifteen people at the briefing.",
             "The meeting room is large."
           ],
           "answer": 0,
           "skill": "detail",
           "evidence": "At two fifteen, after the briefing.",
-          "explanation": "When은 시간을 묻습니다. 인원수 fifty나 장소 정보가 아니라 two fifteen이 답입니다.",
+          "explanation": "When은 시각을 묻습니다. 브리핑 참석 인원 fifteen이 아니라 회의 시작 시각 two fifteen이 답입니다.",
           "dictation": "At two fifteen, after the briefing.",
           "expression": "two fifteen은 몇 시인가요?",
           "choices": [
@@ -73,27 +73,27 @@
           "correct": 1,
           "sound": "fifTEEN과 FIFty의 강세 차이를 들어보세요. 숫자는 앞뒤 문맥과 함께 확인하세요.",
           "retry": {
-            "script": "A: When should we meet the new manager?\nB: At three fifty, after the workshop.",
-            "prompt": "When is the meeting?",
+            "script": "Woman: When are we meeting the new manager?\nMan: A. The manager has a new office.\nMan: B. At three fifty, after the workshop.\nMan: C. About fifty copies, please.",
+            "prompt": "Choose the best response.",
             "options": [
-              "3:15",
-              "3:50",
-              "5:30"
+              "The manager has a new office.",
+              "At three fifty, after the workshop.",
+              "About fifty copies, please."
             ],
             "answer": 1,
-            "explanation": "three fifty는 3:50입니다. fifteen과 fifty를 구분하세요.",
-            "audioId": "t2-2-retry"
+            "explanation": "When에 대한 응답은 At three fifty입니다. fifty copies는 필요한 부수를 말하므로 적절하지 않습니다.",
+            "audioId": "t2-2-retry-r32"
           },
-          "script": "A: When will the client meeting begin?\nB: A. At two fifteen, after the briefing.\nB: B. There are fifty people.\nB: C. The meeting room is large.",
-          "audioId": "t2-2-main",
+          "script": "Woman: When will the client meeting begin?\nMan: A. At two fifteen, after the briefing.\nMan: B. There were fifteen people at the briefing.\nMan: C. The meeting room is large.",
+          "audioId": "t2-2-main-r32",
           "dictationAudio": "t2-2-focus"
         },
         {
           "id": "t2-3",
-          "prompt": "가장 자연스러운 응답은 무엇인가요?",
+          "prompt": "Choose the best response.",
           "options": [
-            "The proposal is on the desk.",
-            "Yes, the desk is new.",
+            "The proposal was approved yesterday.",
+            "Yes, the printer is out of paper.",
             "A second pair of eyes would help."
           ],
           "answer": 2,
@@ -110,22 +110,23 @@
           "correct": 0,
           "sound": "pair of eyes를 한 덩어리로 연결해 읽어보세요. 단어마다 끊기보다 의미 단위를 유지해요.",
           "retry": {
-            "script": "A: Would you like me to check your report?\nB: Another review would be useful.",
-            "prompt": "What does the second speaker want?",
+            "script": "Woman: Would you like me to look over your report?\nMan: A. Another review would be helpful.\nMan: B. The reporter arrived this morning.\nMan: C. The meeting room is upstairs.",
+            "prompt": "Choose the best response.",
             "options": [
-              "Help reviewing the report",
-              "A different computer",
-              "A printed timetable"
+              "Another review would be helpful.",
+              "The reporter arrived this morning.",
+              "The meeting room is upstairs."
             ],
             "answer": 0,
-            "explanation": "another review는 다른 사람이 다시 검토해 주기를 원한다는 뜻입니다.",
-            "audioId": "t2-3-retry"
+            "explanation": "Another review would be helpful은 보고서를 다시 검토해 달라는 제안을 받아들이는 응답입니다.",
+            "audioId": "t2-3-retry-r32"
           },
-          "script": "A: Would you like me to proofread your proposal?\nB: A. The proposal is on the desk.\nB: B. Yes, the desk is new.\nB: C. A second pair of eyes would help.",
-          "audioId": "t2-3-main",
+          "script": "Woman: Would you like me to proofread your proposal?\nMan: A. The proposal was approved yesterday.\nMan: B. Yes, the printer is out of paper.\nMan: C. A second pair of eyes would help.",
+          "audioId": "t2-3-main-r32",
           "dictationAudio": "t2-3-focus"
         }
-      ]
+      ],
+      "spokenOnly": true
     },
     {
       "id": "toeic3",
@@ -136,20 +137,20 @@
       "level": "B1–B2 · 검증 전 예상 수준",
       "minutes": 7,
       "goal": "변경 전·후의 정보와 화자별 할 일을 구분해요.",
-      "script": "Alex: The client meeting was at ten, but it has moved to eleven because the train is delayed.\nMorgan: Should I tell the design team?\nAlex: Yes. Ask them to bring the samples to Room Four instead of Room Two.\nMorgan: I will send an updated invitation now.\nAlex: Please ask everyone to arrive ten minutes early.",
+      "script": "Woman: The client meeting was scheduled for ten. We've moved it to eleven because the client's train is delayed.\nMan: Should I let the design team know?\nWoman: Yes, please. Ask them to bring the samples to Room Four instead of Room Two.\nMan: I will send an updated invitation now.\nWoman: Thanks. Please ask everyone to arrive ten minutes early.",
       "questions": [
         {
           "id": "t3-1",
-          "prompt": "When should everyone arrive?",
+          "prompt": "What time are the participants asked to arrive?",
           "options": [
-            "10:00",
-            "10:50",
-            "11:10",
-            "11:00"
+            "At 10:00",
+            "At 10:50",
+            "At 11:10",
+            "At 11:00"
           ],
           "answer": 1,
           "skill": "detail",
-          "evidence": "The client meeting was at ten, but it has moved to eleven because the train is delayed. / Please ask everyone to arrive ten minutes early.",
+          "evidence": "We've moved it to eleven because the client's train is delayed. / Please ask everyone to arrive ten minutes early.",
           "explanation": "회의는 11시, 도착은 10분 전인 10:50입니다. 회의 시작과 도착 시각을 구분해요.",
           "dictation": "Please ask everyone to arrive ten minutes early.",
           "expression": "The meeting starts at eleven. Arrive ten minutes early. → 도착 시각은?",
@@ -161,23 +162,23 @@
           "correct": 0,
           "sound": "TEN minutes EARLY에 강세를 두고 따라 말해요. early와 late가 시간 계산을 바꿉니다.",
           "retry": {
-            "script": "The tour starts at two thirty. Please arrive fifteen minutes early.",
+            "script": "Woman: What time does the factory tour start?\nMan: At two thirty. Visitors should arrive fifteen minutes early to collect their passes.\nWoman: Thanks. I'll let the rest of the group know.",
             "prompt": "When should visitors arrive?",
             "options": [
-              "2:45",
-              "2:30",
-              "2:15",
-              "1:45"
+              "At 2:45",
+              "At 2:30",
+              "At 2:15",
+              "At 1:45"
             ],
             "answer": 2,
             "explanation": "2:30에서 15분을 빼면 2:15입니다.",
-            "audioId": "t3-1-retry"
+            "audioId": "t3-1-retry-r32"
           },
           "dictationAudio": "t3-1-focus"
         },
         {
           "id": "t3-2",
-          "prompt": "Why was the meeting moved?",
+          "prompt": "Why has the meeting been rescheduled?",
           "options": [
             "The room is closed.",
             "The samples are missing.",
@@ -186,9 +187,9 @@
           ],
           "answer": 2,
           "skill": "inference",
-          "evidence": "it has moved to eleven because the train is delayed.",
+          "evidence": "We've moved it to eleven because the client's train is delayed.",
           "explanation": "because 뒤의 기차 지연이 일정 변경의 원인입니다. 장소나 준비물은 원인이 아니에요.",
-          "dictation": "It has moved to eleven because the train is delayed.",
+          "dictation": "We've moved it to eleven because the client's train is delayed.",
           "expression": "because가 이끄는 정보는?",
           "choices": [
             "원인",
@@ -196,9 +197,9 @@
             "추가 요청"
           ],
           "correct": 0,
-          "sound": "because 뒤의 the TRAIN is deLAYED를 하나로 말하며 이유를 전달해요.",
+          "sound": "the CLIENT'S TRAIN / is deLAYED를 연결해 읽고, because 뒤에 변경 이유가 오는지 확인하세요.",
           "retry": {
-            "script": "The workshop will begin at noon rather than eleven because the instructor's flight is delayed.",
+            "script": "Woman: Is the training workshop still starting at eleven?\nMan: No, we've pushed it back to noon. The instructor's flight has been delayed.\nWoman: All right. I'll update the notice outside the room.",
             "prompt": "Why will the workshop start later?",
             "options": [
               "The room is smaller.",
@@ -208,13 +209,13 @@
             ],
             "answer": 1,
             "explanation": "강사의 비행 지연이 원인입니다.",
-            "audioId": "t3-2-retry"
+            "audioId": "t3-2-retry-r32"
           },
-          "dictationAudio": "t3-2-focus"
+          "dictationAudio": "t3-2-focus-r31"
         },
         {
           "id": "t3-3",
-          "prompt": "What will Morgan do next?",
+          "prompt": "What will the man most likely do next?",
           "options": [
             "Check the train",
             "Bring a projector",
@@ -224,7 +225,7 @@
           "answer": 3,
           "skill": "paraphrase",
           "evidence": "I will send an updated invitation now.",
-          "explanation": "updated는 revised와 같은 의미로 쓰였습니다. Morgan의 다음 행동을 찾아야 해요.",
+          "explanation": "updated는 revised와 같은 의미로 쓰였습니다. 남자의 다음 행동을 찾아야 해요.",
           "dictation": "I will send an updated invitation now.",
           "expression": "updated invitation과 같은 뜻은?",
           "choices": [
@@ -235,22 +236,23 @@
           "correct": 0,
           "sound": "I'll / send an updated invitation / now. 의미 단위로 끊어 말해요.",
           "retry": {
-            "script": "A: The venue has changed to the library.\nB: I will email the revised directions to all participants.",
-            "prompt": "What will the second speaker do?",
+            "script": "Woman: We have to move the orientation session to the library. The conference room won't be available.\nMan: In that case, I'll email the revised directions to everyone who registered.\nWoman: Good idea. Please send them this afternoon.",
+            "prompt": "What does the man offer to do?",
             "options": [
-              "Send updated travel information",
-              "Cancel the event",
-              "Call the librarian",
-              "Buy tickets"
+              "Send updated directions",
+              "Cancel an event",
+              "Contact a librarian",
+              "Purchase some tickets"
             ],
             "answer": 0,
-            "explanation": "revised directions를 이메일로 보내겠다는 말이 updated travel information으로 바뀌었습니다.",
-            "audioId": "t3-3-retry"
+            "explanation": "revised directions를 이메일로 보내겠다는 말이 Send updated directions로 바뀌었습니다.",
+            "audioId": "t3-3-retry-r32"
           },
           "dictationAudio": "t3-3-focus"
         }
       ],
-      "audioId": "toeic3-main"
+      "audioId": "toeic3-main-r32",
+      "spokenOnly": false
     },
     {
       "id": "toeic4",
@@ -261,20 +263,20 @@
       "level": "B1–B2 · 검증 전 예상 수준",
       "minutes": 7,
       "goal": "안내 방송에서 바뀐 시간과 필요한 행동을 찾아요.",
-      "script": "Good afternoon, passengers for Flight 417. Boarding has moved from gate B12 to gate C4 because of an aircraft inspection. Boarding begins at four forty-five, fifteen minutes later than planned. Your checked bags will be transferred automatically. Please go directly to gate C4.",
+      "script": "Attention, passengers traveling on Flight four seventeen. Because of an aircraft inspection, boarding has been moved from gate B twelve to gate C four. Boarding begins at four forty-five, fifteen minutes later than originally scheduled. Your checked bags will be transferred automatically. Please proceed directly to gate C four and have your boarding passes ready.",
       "questions": [
         {
           "id": "t4-1",
           "prompt": "When will boarding begin?",
           "options": [
-            "4:30",
-            "4:15",
-            "4:45",
-            "5:00"
+            "At 4:30",
+            "At 4:15",
+            "At 4:45",
+            "At 5:00"
           ],
           "answer": 2,
           "skill": "detail",
-          "evidence": "Boarding begins at four forty-five, fifteen minutes later than planned.",
+          "evidence": "Boarding begins at four forty-five, fifteen minutes later than originally scheduled.",
           "explanation": "최종 탑승 시각은 four forty-five입니다. 원래 예정된 4:30과 구분해요.",
           "dictation": "Boarding begins at four forty-five.",
           "expression": "four forty-five를 숫자로 쓰면?",
@@ -286,17 +288,17 @@
           "correct": 0,
           "sound": "four FORTY-FIVE의 마지막 숫자까지 들어요. fifteen은 지연 길이이지 최종 시각이 아닙니다.",
           "retry": {
-            "script": "The bus was scheduled for six ten. It will now leave at six forty.",
+            "script": "May I have your attention, please? The express bus to the airport, originally scheduled to depart at six ten, will now leave at six forty. Please remain in the waiting area until boarding is announced.",
             "prompt": "When will the bus leave?",
             "options": [
-              "6:10",
-              "6:30",
-              "6:40",
-              "6:14"
+              "At 6:10",
+              "At 6:30",
+              "At 6:40",
+              "At 6:14"
             ],
             "answer": 2,
             "explanation": "now leave가 최종 출발 시각 6:40을 알려줍니다.",
-            "audioId": "t4-1-retry"
+            "audioId": "t4-1-retry-r31"
           },
           "dictationAudio": "t4-1-focus"
         },
@@ -311,7 +313,7 @@
           ],
           "answer": 0,
           "skill": "inference",
-          "evidence": "because of an aircraft inspection.",
+          "evidence": "Because of an aircraft inspection, boarding has been moved from gate B twelve to gate C four.",
           "explanation": "because of 뒤에 원인이 제시됩니다. inspection은 점검입니다.",
           "dictation": "The gate has changed because of an aircraft inspection.",
           "expression": "because of an inspection과 같은 뜻은?",
@@ -323,7 +325,7 @@
           "correct": 1,
           "sound": "an aircraft inspection에서 모음으로 시작하는 단어를 자연스럽게 연결해요.",
           "retry": {
-            "script": "The museum entrance has moved to the east side because the main doors are being repaired.",
+            "script": "Welcome to the City Museum. While the main doors are being repaired, visitors should use the entrance on the east side of the building. All exhibitions will remain open during our regular hours.",
             "prompt": "Why has the entrance changed?",
             "options": [
               "The tickets are sold out.",
@@ -333,18 +335,18 @@
             ],
             "answer": 2,
             "explanation": "주 출입문 수리가 변경의 원인입니다.",
-            "audioId": "t4-2-retry"
+            "audioId": "t4-2-retry-r31"
           },
           "dictationAudio": "t4-2-focus"
         },
         {
           "id": "t4-3",
-          "prompt": "What should passengers do about checked bags?",
+          "prompt": "What does the speaker say about checked baggage?",
           "options": [
-            "Collect them at B12",
-            "Pay a transfer fee",
-            "Take them to C4",
-            "No action is needed"
+            "It must be collected at the original gate.",
+            "It requires an additional handling fee.",
+            "It should be taken to the new gate by passengers.",
+            "It will be moved without passengers taking action."
           ],
           "answer": 3,
           "skill": "paraphrase",
@@ -360,7 +362,7 @@
           "correct": 0,
           "sound": "CHECKED BAGS / will be transferred / automatically. 중요한 정보 단위를 살려 말해요.",
           "retry": {
-            "script": "Your reservation will be moved to the new hotel automatically. You do not need to contact either hotel.",
+            "script": "This is a message for guests with reservations at the Park Hotel. Your booking will be transferred to our Riverside location at no additional charge. The transfer is automatic, so there is no need to contact either hotel. We apologize for the inconvenience.",
             "prompt": "What should the guest do about the reservation?",
             "options": [
               "Call both hotels",
@@ -370,38 +372,38 @@
             ],
             "answer": 2,
             "explanation": "자동 이전되므로 따로 행동할 필요가 없습니다.",
-            "audioId": "t4-3-retry"
+            "audioId": "t4-3-retry-r31"
           },
           "dictationAudio": "t4-3-focus"
         }
       ],
-      "audioId": "toeic4-main"
+      "audioId": "toeic4-main-r31",
+      "spokenOnly": false
     },
     {
       "id": "teps",
       "exam": "TEPS",
-      "part": "청해 · 대화 연습",
+      "part": "Part 3 · 대화",
       "title": "스터디 약속 조율하기",
       "topic": "대학 · 스터디",
       "level": "B1–B2 · 검증 전 예상 수준",
       "minutes": 7,
       "goal": "간접적인 요청과 바뀐 약속을 이해하고 직접 응답해요.",
       "oralChoices": true,
-      "script": "A: Can you join our study group at the library tomorrow?\nB: I have a lab session until three. Could we start at three thirty instead of two?\nA: That works. I will book a room for three thirty. Please send everyone the new time.\nB: Sure. I will let the group know tonight.",
       "questions": [
         {
           "id": "te-1",
-          "prompt": "Why does the second speaker suggest a later time?",
+          "prompt": "Why does the man suggest a later time?",
           "options": [
-            "The library opens late.",
-            "The room is full.",
-            "They have a laboratory session.",
-            "They forgot the meeting."
+            "He has a laboratory class.",
+            "The library closes early.",
+            "He needs to reserve a room.",
+            "He has forgotten the meeting place."
           ],
-          "answer": 2,
+          "answer": 0,
           "skill": "inference",
           "evidence": "I have a lab session until three.",
-          "explanation": "3시까지 실험 수업이 있다는 말로 기존 2시 약속이 어렵다는 이유를 전달합니다.",
+          "explanation": "남자는 3시까지 실험 수업이 있어서 기존 2시 약속보다 늦게 만나자고 합니다.",
           "dictation": "I have a lab session until three.",
           "expression": "이 문장이 약속 조율에서 하는 역할은?",
           "choices": [
@@ -412,33 +414,35 @@
           "correct": 0,
           "sound": "lab session / until THREE. until 뒤의 시각까지 다른 일정이 있음을 전달해요.",
           "retry": {
-            "script": "A: Can we rehearse at four?\nB: My tutorial ends at four thirty. Could we meet at five?",
-            "prompt": "Why does the second speaker request five o'clock?",
+            "script": "Woman: Can we rehearse our presentation at four?\nMan: My tutorial doesn't finish until four thirty. How about five?\nWoman: Five is fine. I'll check whether the room is free.\nMan: Thanks. I'll see you then.",
+            "prompt": "Why does the man suggest meeting at five?",
             "options": [
-              "They have an earlier class.",
-              "They need a new room.",
-              "They dislike rehearsals.",
-              "They want to cancel."
+              "He has a class until four thirty.",
+              "He needs to prepare the room.",
+              "He has another rehearsal at five.",
+              "He wants to cancel the presentation."
             ],
             "answer": 0,
-            "explanation": "수업이 4:30에 끝나서 더 늦은 시간을 요청합니다.",
-            "audioId": "te-1-retry"
+            "explanation": "남자의 수업이 4:30에 끝나므로 5시에 만나자고 제안합니다.",
+            "audioId": "te-1-retry-r32"
           },
           "dictationAudio": "te-1-focus",
-          "questionAudio": "te-1-question"
+          "questionAudio": "te-1-question-r32",
+          "script": "Woman: Are you free to meet at the library at two tomorrow?\nMan: I have a lab session until three. Could we make it a little later?\nWoman: Sure. Would three thirty work?\nMan: That would be fine. Thanks for being flexible.",
+          "audioId": "te-1-main-r32"
         },
         {
           "id": "te-2",
           "prompt": "When will the study group meet?",
           "options": [
-            "2:00",
-            "3:00",
-            "3:30",
-            "2:30"
+            "At two o'clock.",
+            "At three o'clock.",
+            "At three thirty.",
+            "At two thirty."
           ],
           "answer": 2,
           "skill": "detail",
-          "evidence": "Could we start at three thirty instead of two? / I will book a room for three thirty.",
+          "evidence": "Could we start at three thirty instead of two? / I'll reserve it for three thirty.",
           "explanation": "대화 상대가 동의한 최종 약속은 3:30입니다.",
           "dictation": "Could we start at three thirty instead of two?",
           "expression": "instead of two는 무엇을 뜻하나요?",
@@ -450,24 +454,26 @@
           "correct": 1,
           "sound": "THREE THIRTY / instead of TWO. 바뀌는 두 시각을 대조해서 읽어보세요.",
           "retry": {
-            "script": "A: The club meeting was at five, but the room is only free at five forty.\nB: All right. Let us meet at five forty.",
+            "script": "Woman: I was going to book the club room for five, but someone else is using it until five forty.\nMan: Let's meet at five forty, then.\nWoman: I'll let everyone know.\nMan: Thanks. That works for me.",
             "prompt": "What is the agreed time?",
             "options": [
-              "5:00",
-              "5:14",
-              "4:50",
-              "5:40"
+              "At five o'clock.",
+              "At five fourteen.",
+              "At four fifty.",
+              "At five forty."
             ],
             "answer": 3,
             "explanation": "동의한 최종 시각은 5:40입니다.",
-            "audioId": "te-2-retry"
+            "audioId": "te-2-retry-r32"
           },
           "dictationAudio": "te-2-focus",
-          "questionAudio": "te-2-question"
+          "questionAudio": "te-2-question-r31",
+          "script": "Woman: Shall we get the study group together at two tomorrow?\nMan: Could we start at three thirty instead of two? The room isn't available until then.\nWoman: That's fine. I'll reserve it for three thirty.\nMan: Great. See you there.",
+          "audioId": "te-2-main-r32"
         },
         {
           "id": "te-3",
-          "prompt": "What will the second speaker do tonight?",
+          "prompt": "What will the man do tonight?",
           "options": [
             "Book a room",
             "Inform the other members",
@@ -477,7 +483,7 @@
           "answer": 1,
           "skill": "paraphrase",
           "evidence": "I will let the group know tonight.",
-          "explanation": "let someone know는 inform someone과 같은 뜻입니다. 방을 예약하는 사람은 첫 번째 화자예요.",
+          "explanation": "남자는 오늘 밤 다른 멤버들에게 알리겠다고 합니다. let someone know는 inform someone과 같은 뜻입니다. 방을 예약한 사람은 여자예요.",
           "dictation": "I will let the group know tonight.",
           "expression": "let the group know와 같은 뜻은?",
           "choices": [
@@ -488,23 +494,25 @@
           "correct": 0,
           "sound": "LET the group KNOW / tonight. 핵심 동사와 시간에 강세를 두고 말해요.",
           "retry": {
-            "script": "A: I have reserved the seminar room. Can you pass the new schedule on to the others?\nB: Yes, I will message them this afternoon.",
-            "prompt": "What will the second speaker do?",
+            "script": "Woman: I've reserved the seminar room. Could you pass the revised schedule on to the others?\nMan: Sure. I'll message them this afternoon.\nWoman: Thanks. Make sure they know about the new starting time.\nMan: I will.",
+            "prompt": "What will the man do?",
             "options": [
-              "Reserve a room",
-              "Attend a seminar",
-              "Share the updated schedule",
-              "Cancel the messages"
+              "Reserve a different room",
+              "Prepare for a seminar",
+              "Send the others the revised schedule",
+              "Cancel the afternoon meeting"
             ],
             "answer": 2,
-            "explanation": "pass on과 message them은 다른 사람에게 일정 정보를 전달한다는 뜻입니다.",
-            "audioId": "te-3-retry"
+            "explanation": "남자는 다른 사람들에게 변경된 일정을 메시지로 보내겠다고 합니다. pass on과 message them은 여기서 정보를 전달한다는 뜻입니다.",
+            "audioId": "te-3-retry-r32"
           },
           "dictationAudio": "te-3-focus",
-          "questionAudio": "te-3-question"
+          "questionAudio": "te-3-question-r32",
+          "script": "Woman: I've booked a room for our study group tomorrow. Could you tell the others?\nMan: Of course. I will let the group know tonight.\nWoman: Please remind them to bring their notes as well.\nMan: Will do.",
+          "audioId": "te-3-main-r32"
         }
       ],
-      "audioId": "teps-main"
+      "spokenOnly": true
     }
   ]
 }

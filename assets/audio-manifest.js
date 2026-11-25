@@ -1258,5 +1258,1559 @@ window.AEL_AUDIO = {
       "provider": "Azure AI Speech",
       "modelVersion": "Not reported by synthesis endpoint"
     }
+  },
+  "t2-1-main-r31": {
+    "US": {
+      "path": "assets/audio/t2-1-main-r31-US.mp3",
+      "script": "A: You're coming to the retirement party, aren't you?\nB: A. The invitation arrived this morning.\nB: B. I have a client dinner that evening.\nB: C. The party was enjoyable.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:09:11.012497+00:00",
+      "sha256": "b208fd92b27ec9dcee2868458b5fef790b9d36b21df1e34c651bed6a54a2b959",
+      "ssmlSha256": "38118d60f8531d012fa1d5b46f59830ff8d25623a39d98fdb1c0574032775d7e",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t2-1-main-r31-UK.mp3",
+      "script": "A: You're coming to the retirement party, aren't you?\nB: A. The invitation arrived this morning.\nB: B. I have a client dinner that evening.\nB: C. The party was enjoyable.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:09:14.716669+00:00",
+      "sha256": "fe0507ae15fd93cc583efa4303a138160cac72f730f10b5e85b0ad035b9c402c",
+      "ssmlSha256": "cc3b74dd8c09d8413823c5ee72aee595a027f3415f4a4fc7381f9f9599aabf52",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t2-1-main-r31-AU.mp3",
+      "script": "A: You're coming to the retirement party, aren't you?\nB: A. The invitation arrived this morning.\nB: B. I have a client dinner that evening.\nB: C. The party was enjoyable.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:09:18.461385+00:00",
+      "sha256": "c812272ec0881c1025a5dd082a0420d40d0a25f3901987466348c0cb30dc758c",
+      "ssmlSha256": "0bdda21f17bb93908d4fcb6f9f6815c8a8b97b0102b031e2de922bac0bbf8cc8",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t2-1-retry-r31": {
+    "US": {
+      "path": "assets/audio/t2-1-retry-r31-US.mp3",
+      "script": "A: Will you be joining us for lunch on Friday?\nB: A. The restaurant is across the street.\nB: B. I ordered lunch an hour ago.\nB: C. I'll be away on business that day.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:09:22.176571+00:00",
+      "sha256": "ce82ef712b39438f26f451253faab6f9c4bad7243d3e77b3ac86ed6f9792e1dc",
+      "ssmlSha256": "7ced21aa943562ecb6138e93af73379d758662e890fce7171dcc9bf140232d03",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t2-1-retry-r31-UK.mp3",
+      "script": "A: Will you be joining us for lunch on Friday?\nB: A. The restaurant is across the street.\nB: B. I ordered lunch an hour ago.\nB: C. I'll be away on business that day.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:09:25.892128+00:00",
+      "sha256": "da78433367d5fb4700505c34d7728bebfee789e4f6e9f6bc4e242ce8f60859f9",
+      "ssmlSha256": "9f295406e58d180b0d38b8493b697439ff828ab50bfd3fe4e3d1593c6eb185c0",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t2-1-retry-r31-AU.mp3",
+      "script": "A: Will you be joining us for lunch on Friday?\nB: A. The restaurant is across the street.\nB: B. I ordered lunch an hour ago.\nB: C. I'll be away on business that day.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:09:29.616643+00:00",
+      "sha256": "bffa47871a49ca0a1e4f915cf7fa2793ed5ee6c95c2a8c87cdf9df3eeb456a5e",
+      "ssmlSha256": "58f848515cc5a6f44ad3b181503171acdc216b2b54997cd1fc22b740719f8b8d",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t2-2-main-r31": {
+    "US": {
+      "path": "assets/audio/t2-2-main-r31-US.mp3",
+      "script": "A: When will the client meeting begin?\nB: A. At two fifteen, after the briefing.\nB: B. There were fifteen people at the briefing.\nB: C. The meeting room is large.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:09:33.247132+00:00",
+      "sha256": "139f15c3806d37d8001f80c8f260ba878d88564a112c3ea153522ceb603ad60b",
+      "ssmlSha256": "0c63125472b30ad46816ffb282fb814876791566b99942d565a64e1d389d3eab",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t2-2-main-r31-UK.mp3",
+      "script": "A: When will the client meeting begin?\nB: A. At two fifteen, after the briefing.\nB: B. There were fifteen people at the briefing.\nB: C. The meeting room is large.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:09:36.944188+00:00",
+      "sha256": "d182a413e283c1bebb9ebc11b8cb690c376a7371067f90a1e6aad07d48e450bb",
+      "ssmlSha256": "df4dd79ae0689d58365151e42f2733774448eba1cb862ea6864070d73631e810",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t2-2-main-r31-AU.mp3",
+      "script": "A: When will the client meeting begin?\nB: A. At two fifteen, after the briefing.\nB: B. There were fifteen people at the briefing.\nB: C. The meeting room is large.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:09:40.591964+00:00",
+      "sha256": "915887087e0c33d73a15e6df1cce2ccd623472817b49df77ce7295742fc1f0c0",
+      "ssmlSha256": "e9cc99a3743c5143c9b676a91e615c5d121b17bcd5b801ec089681f91a3aa764",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t2-2-retry-r31": {
+    "US": {
+      "path": "assets/audio/t2-2-retry-r31-US.mp3",
+      "script": "A: When are we meeting the new manager?\nB: A. The manager has a new office.\nB: B. At three fifty, after the workshop.\nB: C. About fifty copies, please.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:09:44.127628+00:00",
+      "sha256": "7d7747fccd8a262aaaa1cf5947fdd00d5e870d5e707713145139da8866b4d55e",
+      "ssmlSha256": "0a43cbf2cf408967bb84824f645de7da56411026f4b0bb724b45b2414adc11d7",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t2-2-retry-r31-UK.mp3",
+      "script": "A: When are we meeting the new manager?\nB: A. The manager has a new office.\nB: B. At three fifty, after the workshop.\nB: C. About fifty copies, please.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:09:48.131682+00:00",
+      "sha256": "c8b0f6bfcff8a0a560b3272f9d48952f52db02ea2b0f5ae496813173f81ed37d",
+      "ssmlSha256": "81d380de2271b49f7ba390239fbb14441c3b4cfdc1a82ca87da9f3230a3aa1be",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t2-2-retry-r31-AU.mp3",
+      "script": "A: When are we meeting the new manager?\nB: A. The manager has a new office.\nB: B. At three fifty, after the workshop.\nB: C. About fifty copies, please.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:09:51.738813+00:00",
+      "sha256": "716a1f4d7e33d091cce47e6356254a0da1721e82a5843edafa5f944d955d82c3",
+      "ssmlSha256": "d2bee19fff1bd84e93982849525b0e76bc52bf6195cf9e0aebda127f8a1b12c2",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t2-3-main-r31": {
+    "US": {
+      "path": "assets/audio/t2-3-main-r31-US.mp3",
+      "script": "A: Would you like me to proofread your proposal?\nB: A. The proposal was approved yesterday.\nB: B. Yes, the printer is out of paper.\nB: C. A second pair of eyes would help.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:09:55.311926+00:00",
+      "sha256": "90a5c07a4a9e417ca6887c9225fe907bd270d98e922fd5e8555725652ddaee38",
+      "ssmlSha256": "ce444fa366a7f31fed239d79a1551b4791bd27dcb48780ffe82716a025e27695",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t2-3-main-r31-UK.mp3",
+      "script": "A: Would you like me to proofread your proposal?\nB: A. The proposal was approved yesterday.\nB: B. Yes, the printer is out of paper.\nB: C. A second pair of eyes would help.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:09:59.044026+00:00",
+      "sha256": "858d7984151659917262c3b8cbddfd391ad7b75468c7cb69b2b00e7a6924f2f8",
+      "ssmlSha256": "93a34e9b689259a9ad6196226c5d0c4479b92cdd13f3e91452d3bad591c5d36b",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t2-3-main-r31-AU.mp3",
+      "script": "A: Would you like me to proofread your proposal?\nB: A. The proposal was approved yesterday.\nB: B. Yes, the printer is out of paper.\nB: C. A second pair of eyes would help.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:10:04.942675+00:00",
+      "sha256": "58fc67cd15d3cb3d49324c2b2cb6586035ceeda7cd39f143977e0ebcfa657062",
+      "ssmlSha256": "b95f59ce8342d0d17bfabba72ee4eac4129e0b8ba2abc493bc600be15deb0016",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t2-3-retry-r31": {
+    "US": {
+      "path": "assets/audio/t2-3-retry-r31-US.mp3",
+      "script": "A: Would you like me to look over your report?\nB: A. Another review would be helpful.\nB: B. The reporter arrived this morning.\nB: C. The meeting room is upstairs.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:10:08.630867+00:00",
+      "sha256": "9f36d048cdaa579546b78a260f90a36ed51a2f1ac5de5a6a843fb0ba57c33e70",
+      "ssmlSha256": "03fb69368092945fb912f6538137a5ee7f4f5b418c41b54141c981d8dafaae8c",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t2-3-retry-r31-UK.mp3",
+      "script": "A: Would you like me to look over your report?\nB: A. Another review would be helpful.\nB: B. The reporter arrived this morning.\nB: C. The meeting room is upstairs.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:10:12.307244+00:00",
+      "sha256": "eb877bbc68bd80bfd9a6ef9f0ccbebc4edeab2d79f3a723c5e70117ff571632f",
+      "ssmlSha256": "85843e39b5b552fb06a67a5b824a5f6d156457096106d3fa8582f942f5402110",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t2-3-retry-r31-AU.mp3",
+      "script": "A: Would you like me to look over your report?\nB: A. Another review would be helpful.\nB: B. The reporter arrived this morning.\nB: C. The meeting room is upstairs.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:10:15.884248+00:00",
+      "sha256": "4d248978e98f58eddfc855632e3f25fdb4148129f88e083648cf5cc1b503db80",
+      "ssmlSha256": "83e91448866452acf62b02de5c4ac80bf06a8c6e80020832291421704310a92d",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "toeic3-main-r31": {
+    "US": {
+      "path": "assets/audio/toeic3-main-r31-US.mp3",
+      "script": "Alex: The client meeting was scheduled for ten. We've moved it to eleven because the client's train is delayed.\nMorgan: Should I let the design team know?\nAlex: Yes, please. Ask them to bring the samples to Room Four instead of Room Two.\nMorgan: I will send an updated invitation now.\nAlex: Thanks. Please ask everyone to arrive ten minutes early.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:10:19.700255+00:00",
+      "sha256": "6cfc738ee63ec381149a1be884fdea4de51543bafb4e2cfd2f0cf4a7a89d3342",
+      "ssmlSha256": "71c3fb9c543ecc158102abc1d1b4890ea07d4e1e15940cd95b3a41b7fe1db3a3",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/toeic3-main-r31-UK.mp3",
+      "script": "Alex: The client meeting was scheduled for ten. We've moved it to eleven because the client's train is delayed.\nMorgan: Should I let the design team know?\nAlex: Yes, please. Ask them to bring the samples to Room Four instead of Room Two.\nMorgan: I will send an updated invitation now.\nAlex: Thanks. Please ask everyone to arrive ten minutes early.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:10:23.964947+00:00",
+      "sha256": "0f06f10b335a993806e7cd1c4d0202d350b403d3aebb4c9781038c7c33dc5ff1",
+      "ssmlSha256": "d90ff11c652ec382e60713d4312700d7290c32841a186b484465981bb5a1e045",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/toeic3-main-r31-AU.mp3",
+      "script": "Alex: The client meeting was scheduled for ten. We've moved it to eleven because the client's train is delayed.\nMorgan: Should I let the design team know?\nAlex: Yes, please. Ask them to bring the samples to Room Four instead of Room Two.\nMorgan: I will send an updated invitation now.\nAlex: Thanks. Please ask everyone to arrive ten minutes early.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:10:27.832109+00:00",
+      "sha256": "dd53f0ce8a47bf30baec79793497d3a9d053bbe88ae158fc5582c78a8b3b64fe",
+      "ssmlSha256": "259bacf6ac44101efff91783a229186e5b68683e4e991be2aba2446d9ac22e79",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t3-1-retry-r31": {
+    "US": {
+      "path": "assets/audio/t3-1-retry-r31-US.mp3",
+      "script": "A: What time does the factory tour start?\nB: At two thirty. Visitors should arrive fifteen minutes early to collect their passes.\nA: Thanks. I'll let the rest of the group know.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:10:31.443985+00:00",
+      "sha256": "39502abef9e2409d7eea3332e95926cf5ecd9257172f72f32fc7df6733719816",
+      "ssmlSha256": "1583382d367ae174808b04369b5b585a2620b0677acb3dd9bcf4b1bc12f5f614",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t3-1-retry-r31-UK.mp3",
+      "script": "A: What time does the factory tour start?\nB: At two thirty. Visitors should arrive fifteen minutes early to collect their passes.\nA: Thanks. I'll let the rest of the group know.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:16:39.358607+00:00",
+      "sha256": "1afdabaead4a0e8d9db84fae9e60274fa260db230846b17ee78c2c599f0e310d",
+      "ssmlSha256": "82fc4ff1b16df98256b729243918d19d7514c49861a11cc65dfae41de1eb948c",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t3-1-retry-r31-AU.mp3",
+      "script": "A: What time does the factory tour start?\nB: At two thirty. Visitors should arrive fifteen minutes early to collect their passes.\nA: Thanks. I'll let the rest of the group know.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:16:43.107715+00:00",
+      "sha256": "c43bb8f7c1ba55fa696f3d52bff314cfe72ec4aa933c0a5b7b237abaced16e3c",
+      "ssmlSha256": "5b13dbacfd804973aa685a347c17b0323a07e4b9b63847712c7674ce69318fac",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t3-2-focus-r31": {
+    "US": {
+      "path": "assets/audio/t3-2-focus-r31-US.mp3",
+      "script": "We've moved it to eleven because the client's train is delayed.",
+      "voice": "en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:16:46.504345+00:00",
+      "sha256": "1e4af9824bf655da9c142e9e633e6301e0099cb288b8296a61c885b53e206471",
+      "ssmlSha256": "edb52c4d3e41c38630bc16cd72b86746913e832d0c39bcf900f94c36ae219d66",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t3-2-focus-r31-UK.mp3",
+      "script": "We've moved it to eleven because the client's train is delayed.",
+      "voice": "en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:16:50.138251+00:00",
+      "sha256": "95bec2bad6fa2bd02a7c9a6feae2d6ccdf723343b37dfac8de4163a4a1f1c845",
+      "ssmlSha256": "e605850b12743fcc4cef56a5461c442ad7b25b810621063e6263d08ec1e5eb72",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t3-2-focus-r31-AU.mp3",
+      "script": "We've moved it to eleven because the client's train is delayed.",
+      "voice": "en-AU-NatashaNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:16:53.567762+00:00",
+      "sha256": "bc043a84dbd9b4d5175a3d42dd5ceec1a64af1c791a40d7368dc46454c5cf3ee",
+      "ssmlSha256": "1c635fea8168404e2146e4f068b4647269f7cfccccc9f2e302ff783185eaa453",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t3-2-retry-r31": {
+    "US": {
+      "path": "assets/audio/t3-2-retry-r31-US.mp3",
+      "script": "A: Is the training workshop still starting at eleven?\nB: No, we've pushed it back to noon. The instructor's flight has been delayed.\nA: All right. I'll update the notice outside the room.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:16:57.158174+00:00",
+      "sha256": "08e4aa6e16800467856bba7a96f2f15649c93dfdee32c0b2522d2213467a386d",
+      "ssmlSha256": "7210442e7bd6c85b1cd7df38d4424bc967cc19ed650a65897ee3d275903e8005",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t3-2-retry-r31-UK.mp3",
+      "script": "A: Is the training workshop still starting at eleven?\nB: No, we've pushed it back to noon. The instructor's flight has been delayed.\nA: All right. I'll update the notice outside the room.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:17:00.880856+00:00",
+      "sha256": "b8c372b911fb66bce66bcdeaad7e1bfc1080cc8202c48766b66eadd5e0776c1d",
+      "ssmlSha256": "419f38f20e52874fbaab601e8023239f43bd8d811dc090f6d1b1ddf3476b6094",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t3-2-retry-r31-AU.mp3",
+      "script": "A: Is the training workshop still starting at eleven?\nB: No, we've pushed it back to noon. The instructor's flight has been delayed.\nA: All right. I'll update the notice outside the room.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:17:04.630531+00:00",
+      "sha256": "bde86b1915e4816975a6996b79efca5ccb738523b0383d5b1801b3a0a9122c40",
+      "ssmlSha256": "8a014e61db86d01f279788150300bbb9c46efa57fb8455c96101c7af6193942b",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t3-3-retry-r31": {
+    "US": {
+      "path": "assets/audio/t3-3-retry-r31-US.mp3",
+      "script": "A: We have to move the orientation session to the library. The conference room won't be available.\nB: In that case, I'll email the revised directions to everyone who registered.\nA: Good idea. Please send them this afternoon.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:17:08.162585+00:00",
+      "sha256": "6d5868c7b13fc3d9d814f52d6f2e5a7f742970f98c4656c088bf0be54214006f",
+      "ssmlSha256": "ce2ea999bb0b11ec6bd2cf1025ce54ccd50cfc892444aaa330bb3b581b95fe89",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t3-3-retry-r31-UK.mp3",
+      "script": "A: We have to move the orientation session to the library. The conference room won't be available.\nB: In that case, I'll email the revised directions to everyone who registered.\nA: Good idea. Please send them this afternoon.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:17:12.034043+00:00",
+      "sha256": "340bbd2eda2dc7d4dbd254210a2690dc82aeaf7c2fbccf6e4359a3afc628bd3d",
+      "ssmlSha256": "5eb9f37bbb1cbbeba6ff55a1f90239e07977112ea4b217a108b5752f54ab060f",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t3-3-retry-r31-AU.mp3",
+      "script": "A: We have to move the orientation session to the library. The conference room won't be available.\nB: In that case, I'll email the revised directions to everyone who registered.\nA: Good idea. Please send them this afternoon.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:17:15.727057+00:00",
+      "sha256": "6ea24fb6ee987c00ee5979cfeffee8ea55db1d9edfed4007439640df8b77e5c7",
+      "ssmlSha256": "4526ef092e3132e5ac430f7df7ba267e1734bd8193cc7dd898cd5a8919a615ff",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "toeic4-main-r31": {
+    "US": {
+      "path": "assets/audio/toeic4-main-r31-US.mp3",
+      "script": "Attention, passengers traveling on Flight four seventeen. Because of an aircraft inspection, boarding has been moved from gate B twelve to gate C four. Boarding begins at four forty-five, fifteen minutes later than originally scheduled. Your checked bags will be transferred automatically. Please proceed directly to gate C four and have your boarding passes ready.",
+      "voice": "en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:17:19.644403+00:00",
+      "sha256": "abd900ba5926f15bfd14331bc43cda491da053659c9cba4c33db7fdeaab1654f",
+      "ssmlSha256": "e745ea88ed7fd1d9fbde3ca50ff7778c7e52bd2d351fdf8bac26aa819606cc26",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/toeic4-main-r31-UK.mp3",
+      "script": "Attention, passengers traveling on Flight four seventeen. Because of an aircraft inspection, boarding has been moved from gate B twelve to gate C four. Boarding begins at four forty-five, fifteen minutes later than originally scheduled. Your checked bags will be transferred automatically. Please proceed directly to gate C four and have your boarding passes ready.",
+      "voice": "en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:17:24.059573+00:00",
+      "sha256": "3b0a2a90f2060565413efeb4720553598d8f181460d9f120d619e8bd6f4410aa",
+      "ssmlSha256": "f8d0e3a2004dd0853cbe51a82fe1045a69ab07f5bbe88bc33e247e5cbf233fdf",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/toeic4-main-r31-AU.mp3",
+      "script": "Attention, passengers traveling on Flight four seventeen. Because of an aircraft inspection, boarding has been moved from gate B twelve to gate C four. Boarding begins at four forty-five, fifteen minutes later than originally scheduled. Your checked bags will be transferred automatically. Please proceed directly to gate C four and have your boarding passes ready.",
+      "voice": "en-AU-NatashaNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:17:27.768950+00:00",
+      "sha256": "3fb0f7bdcef9db516e0ece1576d37e8c831f9592a78009e1098bc8acc4555a73",
+      "ssmlSha256": "567cf612ff0fc2335847596f3f888f364462f956dd34407bea03a3b4facad696",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t4-1-retry-r31": {
+    "US": {
+      "path": "assets/audio/t4-1-retry-r31-US.mp3",
+      "script": "May I have your attention, please? The express bus to the airport, originally scheduled to depart at six ten, will now leave at six forty. Please remain in the waiting area until boarding is announced.",
+      "voice": "en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:17:31.387928+00:00",
+      "sha256": "2d9c884b94e797114c7c985a64fff64c62dc5d56cee9e5ed75f9f0508628ee13",
+      "ssmlSha256": "34304842203284d3150e53a28325e5ea60859c1531a339fc3070bf5908128a02",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t4-1-retry-r31-UK.mp3",
+      "script": "May I have your attention, please? The express bus to the airport, originally scheduled to depart at six ten, will now leave at six forty. Please remain in the waiting area until boarding is announced.",
+      "voice": "en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:17:35.365779+00:00",
+      "sha256": "4594b3f2c0d2da60edac1257583270c0984affa4ba9589e72f35fc64922145c8",
+      "ssmlSha256": "39fc5f9c9380b4fc36aaddcf61e0f94f431edb41da60683557a1e5db593e32b0",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t4-1-retry-r31-AU.mp3",
+      "script": "May I have your attention, please? The express bus to the airport, originally scheduled to depart at six ten, will now leave at six forty. Please remain in the waiting area until boarding is announced.",
+      "voice": "en-AU-NatashaNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:17:39.052123+00:00",
+      "sha256": "1dab6ce20d1a0059d10428b7c536ec9926f963f40d6d29d11d2cd9f56769d99b",
+      "ssmlSha256": "5fc12d7913213ba54077994e985857933ad612ebe806e2d06aad1da199764f47",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t4-2-retry-r31": {
+    "US": {
+      "path": "assets/audio/t4-2-retry-r31-US.mp3",
+      "script": "Welcome to the City Museum. While the main doors are being repaired, visitors should use the entrance on the east side of the building. All exhibitions will remain open during our regular hours.",
+      "voice": "en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:17:42.554239+00:00",
+      "sha256": "aa73115a62997bc4a96078ef210438eed4620cd8db30bd8dc8d0b5637d6da8d7",
+      "ssmlSha256": "aecd7864488ed08cc81f0c17df6fe153e388c2aa3f438a9526d821b6e915bcba",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t4-2-retry-r31-UK.mp3",
+      "script": "Welcome to the City Museum. While the main doors are being repaired, visitors should use the entrance on the east side of the building. All exhibitions will remain open during our regular hours.",
+      "voice": "en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:17:46.574035+00:00",
+      "sha256": "f34aeac767087872186f759314e721ea4c15dc15c64fa09a3674328f9b5a46d5",
+      "ssmlSha256": "e5352c9acd1cf49aad79d7bf2064f9fc8293013b13627c68ece0eb990f2154da",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t4-2-retry-r31-AU.mp3",
+      "script": "Welcome to the City Museum. While the main doors are being repaired, visitors should use the entrance on the east side of the building. All exhibitions will remain open during our regular hours.",
+      "voice": "en-AU-NatashaNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:17:50.173953+00:00",
+      "sha256": "54891a7d3124e600fc225d016e5f530cacd1b4ad7e9b8cb81a157f8891202876",
+      "ssmlSha256": "fea9aaea6ac73686e897e518abbc56c6e56bdccad3e1ab66a2886839ff1679e2",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t4-3-retry-r31": {
+    "US": {
+      "path": "assets/audio/t4-3-retry-r31-US.mp3",
+      "script": "This is a message for guests with reservations at the Park Hotel. Your booking will be transferred to our Riverside location at no additional charge. The transfer is automatic, so there is no need to contact either hotel. We apologize for the inconvenience.",
+      "voice": "en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:17:53.806279+00:00",
+      "sha256": "85a0d8d11601bb02c3638f8398c07992b5f42d2a065681ac3cf5e458ad7d65fd",
+      "ssmlSha256": "daed60918c0c6bb62c6e7253a3c9aa12ab7e1f430b7ad3936415b6a0894aa879",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/t4-3-retry-r31-UK.mp3",
+      "script": "This is a message for guests with reservations at the Park Hotel. Your booking will be transferred to our Riverside location at no additional charge. The transfer is automatic, so there is no need to contact either hotel. We apologize for the inconvenience.",
+      "voice": "en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:17:57.870245+00:00",
+      "sha256": "d5e7550ded40e61d832827a22158812263b4ef6d63607a91cdf28aa02de49a2f",
+      "ssmlSha256": "a53a46b6e817481ac04978f9e40c055e63dd82b7af4140da4b81354ac7787b15",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/t4-3-retry-r31-AU.mp3",
+      "script": "This is a message for guests with reservations at the Park Hotel. Your booking will be transferred to our Riverside location at no additional charge. The transfer is automatic, so there is no need to contact either hotel. We apologize for the inconvenience.",
+      "voice": "en-AU-NatashaNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:18:01.493657+00:00",
+      "sha256": "8df5ea28e6b36893155075f7d0c7db98b059660541e34d01a254a8983f28bfdc",
+      "ssmlSha256": "72aaab612c0dc2d8b35e3af2019e9434d264149aadd4c19aa57a66b69c5d55e7",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-1-main": {
+    "US": {
+      "path": "assets/audio/te-1-main-US.mp3",
+      "script": "A: Are you free to meet at the library at two tomorrow?\nB: I have a lab session until three. Could we make it a little later?\nA: Sure. Would three thirty work?\nB: That would be fine. Thanks for being flexible.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:18:05.159847+00:00",
+      "sha256": "78d04631ba3586fe268cbc92dd1fc35265086f08331096f8c6678c06cc245af3",
+      "ssmlSha256": "c82c5dba00f15b8babe61baa0c742ffd38fb15cfd3f56156eee39bef4580a7a5",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-1-main-UK.mp3",
+      "script": "A: Are you free to meet at the library at two tomorrow?\nB: I have a lab session until three. Could we make it a little later?\nA: Sure. Would three thirty work?\nB: That would be fine. Thanks for being flexible.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:18:08.955124+00:00",
+      "sha256": "63ce33ceba5c0ed6f7669e3a35f93bfab36c6318b7a69cce1924587875e3c393",
+      "ssmlSha256": "af177a9b1492bee6af458b82739343789b4864fb491476f87d6abd474a208594",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-1-main-AU.mp3",
+      "script": "A: Are you free to meet at the library at two tomorrow?\nB: I have a lab session until three. Could we make it a little later?\nA: Sure. Would three thirty work?\nB: That would be fine. Thanks for being flexible.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:18:12.813124+00:00",
+      "sha256": "acdb92aed8cc859667b5b894b45fd17542f7704d5bcd6af55357c2cc043172a5",
+      "ssmlSha256": "67c2dbaf206e998af9559776f8bc3b5c96e0f43707341a0651c7ece634f95876",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-1-question-r31": {
+    "US": {
+      "path": "assets/audio/te-1-question-r31-US.mp3",
+      "script": "Narrator: Why does the second speaker suggest a later time?\nNarrator: A. They have a laboratory class.\nNarrator: B. The library closes early.\nNarrator: C. They need to reserve a room.\nNarrator: D. They have forgotten the meeting place.",
+      "voice": "en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:18:16.401242+00:00",
+      "sha256": "a6d46a383ab879d5dcf34dad2dc5cb4145efd8d0c24f545bdc2f92c2189eb8bc",
+      "ssmlSha256": "c306817efb3e96918e9752908c3228b0ef8eaff974d1806fb00edaaae098be6a",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-1-question-r31-UK.mp3",
+      "script": "Narrator: Why does the second speaker suggest a later time?\nNarrator: A. They have a laboratory class.\nNarrator: B. The library closes early.\nNarrator: C. They need to reserve a room.\nNarrator: D. They have forgotten the meeting place.",
+      "voice": "en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:18:20.205213+00:00",
+      "sha256": "cd15abab61a2af5b41930af15b52166d518b8fee46755dab8e8d541b11064f6f",
+      "ssmlSha256": "f36918819cf2ce23e367d270f7ea1e555bb0119cf19279f252ef8ca3c4728072",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-1-question-r31-AU.mp3",
+      "script": "Narrator: Why does the second speaker suggest a later time?\nNarrator: A. They have a laboratory class.\nNarrator: B. The library closes early.\nNarrator: C. They need to reserve a room.\nNarrator: D. They have forgotten the meeting place.",
+      "voice": "en-AU-NatashaNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:18:23.845239+00:00",
+      "sha256": "e1fa0711f31bdd1d500b89d7b58d433475d00fd4445e41bd4478007562f2c04f",
+      "ssmlSha256": "8901f2760eca86b578e810b4120d5ad216f43e7f70f4848a19cdfb2979eb85fd",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-1-retry-r31": {
+    "US": {
+      "path": "assets/audio/te-1-retry-r31-US.mp3",
+      "script": "A: Can we rehearse our presentation at four?\nB: My tutorial doesn't finish until four thirty. How about five?\nA: Five is fine. I'll check whether the room is free.\nB: Thanks. I'll see you then.\nNarrator: Why does the second speaker suggest meeting at five?\nNarrator: A. They have a class until four thirty.\nNarrator: B. They need to prepare the room.\nNarrator: C. They have another rehearsal at five.\nNarrator: D. They want to cancel the presentation.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:18:27.609370+00:00",
+      "sha256": "2a5ba7f6b6bb877c447f81124ff1697482ed5d413a56ee130c53b93958341617",
+      "ssmlSha256": "5932b9f54c4391c8ecc09e1158bccbde46c6a6c83b4607ec7abf351830218c89",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-1-retry-r31-UK.mp3",
+      "script": "A: Can we rehearse our presentation at four?\nB: My tutorial doesn't finish until four thirty. How about five?\nA: Five is fine. I'll check whether the room is free.\nB: Thanks. I'll see you then.\nNarrator: Why does the second speaker suggest meeting at five?\nNarrator: A. They have a class until four thirty.\nNarrator: B. They need to prepare the room.\nNarrator: C. They have another rehearsal at five.\nNarrator: D. They want to cancel the presentation.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:18:32.155612+00:00",
+      "sha256": "42f907c3f5c63f68a6ea6f67298cf4fd3c8c7093ef50e309a30395b31dd2be19",
+      "ssmlSha256": "d849ee0f1261af98d45b8c7fd64d882797547a9353359e1686f8531df2a30d08",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-1-retry-r31-AU.mp3",
+      "script": "A: Can we rehearse our presentation at four?\nB: My tutorial doesn't finish until four thirty. How about five?\nA: Five is fine. I'll check whether the room is free.\nB: Thanks. I'll see you then.\nNarrator: Why does the second speaker suggest meeting at five?\nNarrator: A. They have a class until four thirty.\nNarrator: B. They need to prepare the room.\nNarrator: C. They have another rehearsal at five.\nNarrator: D. They want to cancel the presentation.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:18:36.330354+00:00",
+      "sha256": "81397f9fc21e71fd6306ce53873079fb9889901a6ea6fa62b8f723f60978cfd7",
+      "ssmlSha256": "d94678bb6734259f2ccab55b11cdc46b41dd11e325c2f853fde0f5ce0766cc55",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-2-main": {
+    "US": {
+      "path": "assets/audio/te-2-main-US.mp3",
+      "script": "A: Shall we get the study group together at two tomorrow?\nB: Could we start at three thirty instead of two? The room isn't available until then.\nA: That's fine. I'll reserve it for three thirty.\nB: Great. See you there.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:18:39.990357+00:00",
+      "sha256": "4436654ec36ad9361882639835ce01f0afa9158b66b815b1ab1cd9728dfd1e94",
+      "ssmlSha256": "d26e50f0640303c0243bad6dc301ebfa143982a7a5a444307d99f044ab2c4abd",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-2-main-UK.mp3",
+      "script": "A: Shall we get the study group together at two tomorrow?\nB: Could we start at three thirty instead of two? The room isn't available until then.\nA: That's fine. I'll reserve it for three thirty.\nB: Great. See you there.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:18:43.868259+00:00",
+      "sha256": "19a6d2597f3e420d1ddbb46d06fe8aaeb9dc3202f1204c5c62cbb2752f884a6a",
+      "ssmlSha256": "a0e2c76f4a28284b089e5efa9f567855e328a44ccbb5b2cbb9d41db7aee27c53",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-2-main-AU.mp3",
+      "script": "A: Shall we get the study group together at two tomorrow?\nB: Could we start at three thirty instead of two? The room isn't available until then.\nA: That's fine. I'll reserve it for three thirty.\nB: Great. See you there.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:18:47.719279+00:00",
+      "sha256": "3e8706ff100eb561f22b57a2ca960b45698a9046c06f0d041d6c8c64b86703da",
+      "ssmlSha256": "8c29a7e1586cf4d02fa407f9d080e9c5e2d0af71604224d19f1bb8ff3a0a73f8",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-2-question-r31": {
+    "US": {
+      "path": "assets/audio/te-2-question-r31-US.mp3",
+      "script": "Narrator: When will the study group meet?\nNarrator: A. At two o'clock.\nNarrator: B. At three o'clock.\nNarrator: C. At three thirty.\nNarrator: D. At two thirty.",
+      "voice": "en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:18:51.260034+00:00",
+      "sha256": "b3b5d215c98e6d19375bcac3ad5db41b33571b41e298d7ff9bc8f9cffb9a558a",
+      "ssmlSha256": "74201762d8ea81d1a4c634f11a720684be5304d9983d14aa54be53117618e31e",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-2-question-r31-UK.mp3",
+      "script": "Narrator: When will the study group meet?\nNarrator: A. At two o'clock.\nNarrator: B. At three o'clock.\nNarrator: C. At three thirty.\nNarrator: D. At two thirty.",
+      "voice": "en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:18:55.027490+00:00",
+      "sha256": "c2b2397ffd9962bd5b0ab30e463d8643c384f7cfb3284855aac57b3099df16b4",
+      "ssmlSha256": "b4a631cdddd487188dc9addd90d37cfc9fc8faad1053548d09ed17d65a0ad7de",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-2-question-r31-AU.mp3",
+      "script": "Narrator: When will the study group meet?\nNarrator: A. At two o'clock.\nNarrator: B. At three o'clock.\nNarrator: C. At three thirty.\nNarrator: D. At two thirty.",
+      "voice": "en-AU-NatashaNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:18:58.565531+00:00",
+      "sha256": "448aff68d041837c744d819f73ee2d712eb06f9d140ae6c90cb218df8508edcf",
+      "ssmlSha256": "055a2fb1ad380d4292851234724615eba59c3cae3b9da41f7d5ff0bc95756072",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-2-retry-r31": {
+    "US": {
+      "path": "assets/audio/te-2-retry-r31-US.mp3",
+      "script": "A: I was going to book the club room for five, but someone else is using it until five forty.\nB: Let's meet at five forty, then.\nA: I'll let everyone know.\nB: Thanks. That works for me.\nNarrator: What is the agreed time?\nNarrator: A. At five o'clock.\nNarrator: B. At five fourteen.\nNarrator: C. At four fifty.\nNarrator: D. At five forty.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:19:02.347748+00:00",
+      "sha256": "57dc20452c556fc25a84ab5a796da3f488493c0854b5f96f43a773ee761212c0",
+      "ssmlSha256": "ad3089d8c4769f83bb709cca8a3d29e7b322a5a2ff2dac43b388afe96f3a4f13",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-2-retry-r31-UK.mp3",
+      "script": "A: I was going to book the club room for five, but someone else is using it until five forty.\nB: Let's meet at five forty, then.\nA: I'll let everyone know.\nB: Thanks. That works for me.\nNarrator: What is the agreed time?\nNarrator: A. At five o'clock.\nNarrator: B. At five fourteen.\nNarrator: C. At four fifty.\nNarrator: D. At five forty.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:19:07.259267+00:00",
+      "sha256": "df3caae61bf6bd60c4276a3f877046ebff2a666ed8da85216aa2565a37fe4442",
+      "ssmlSha256": "389b9486c437b6f1db232c3b86f6973f5bf673cfd1525b52a7f22545b858a0b7",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-2-retry-r31-AU.mp3",
+      "script": "A: I was going to book the club room for five, but someone else is using it until five forty.\nB: Let's meet at five forty, then.\nA: I'll let everyone know.\nB: Thanks. That works for me.\nNarrator: What is the agreed time?\nNarrator: A. At five o'clock.\nNarrator: B. At five fourteen.\nNarrator: C. At four fifty.\nNarrator: D. At five forty.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:19:11.042793+00:00",
+      "sha256": "bf607fbe781a114bb6031c8ad37df285708986800f09b5e15791bb73eeefef2c",
+      "ssmlSha256": "744cce5aa9f532900659dc017744b183ec0a218fcf5217d8e00b618028be4af9",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-3-main": {
+    "US": {
+      "path": "assets/audio/te-3-main-US.mp3",
+      "script": "A: I've booked a room for our study group tomorrow. Could you tell the others?\nB: Of course. I will let the group know tonight.\nA: Please remind them to bring their notes as well.\nB: Will do.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:19:14.583063+00:00",
+      "sha256": "09365a8cf07ada5c371565987d0fa8bca4acf8f691563b9ca6f71950a31b23b1",
+      "ssmlSha256": "b1ce6270f063aeff2c9ba093613136cf6c86d3bcab728e13049dfd10fefe73df",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-3-main-UK.mp3",
+      "script": "A: I've booked a room for our study group tomorrow. Could you tell the others?\nB: Of course. I will let the group know tonight.\nA: Please remind them to bring their notes as well.\nB: Will do.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:19:18.854294+00:00",
+      "sha256": "13a86eba166ece75a18c1938ac1d65a6576bd580bb99f7732f42bdd8394ee396",
+      "ssmlSha256": "a13bfefb4973854e3703aaaf453414ca44425fdfdd5451a0aa4d09a6283609b3",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-3-main-AU.mp3",
+      "script": "A: I've booked a room for our study group tomorrow. Could you tell the others?\nB: Of course. I will let the group know tonight.\nA: Please remind them to bring their notes as well.\nB: Will do.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:19:22.565725+00:00",
+      "sha256": "d9f0c0b569958d714ab415173f3dc8aa36751aefa11e1f0a9c0da3c620ce0f6e",
+      "ssmlSha256": "3253ddb72b79f8ea2bd2234a28a44ef86a29bf01e6d183f700ce82e0ae61ef45",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-3-question-r31": {
+    "US": {
+      "path": "assets/audio/te-3-question-r31-US.mp3",
+      "script": "Narrator: What will the second speaker do tonight?\nNarrator: A. Book a room\nNarrator: B. Inform the other members\nNarrator: C. Prepare an experiment\nNarrator: D. Go to the library",
+      "voice": "en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:19:26.070977+00:00",
+      "sha256": "f8e75e471ee84237132dfb24f21bd789e7f1551fbdbc3259694287056404ab9c",
+      "ssmlSha256": "f5f0858259897ceaa3de5fb6e7226cd445bfdcb304c3376934ce75279eb90ca7",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-3-question-r31-UK.mp3",
+      "script": "Narrator: What will the second speaker do tonight?\nNarrator: A. Book a room\nNarrator: B. Inform the other members\nNarrator: C. Prepare an experiment\nNarrator: D. Go to the library",
+      "voice": "en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:19:29.730251+00:00",
+      "sha256": "fb33fb90bdaa3e717cf52adc0260dd2434c6f8e16ef71806f2eac05a8c642c73",
+      "ssmlSha256": "e95240f3c8c91d8bd4a3c6bea9dad6e9f27e2278d32d673d3971292474f341c8",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-3-question-r31-AU.mp3",
+      "script": "Narrator: What will the second speaker do tonight?\nNarrator: A. Book a room\nNarrator: B. Inform the other members\nNarrator: C. Prepare an experiment\nNarrator: D. Go to the library",
+      "voice": "en-AU-NatashaNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:19:33.358065+00:00",
+      "sha256": "12ee2bdf238dbd211fd69eec9ec3b3519ed0555807647bd0d3ad5de740dc0e8e",
+      "ssmlSha256": "ee9039279383e259a8824ed8d0920a728bc7ec230a5fb912e3111b0416d59c5e",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-3-retry-r31": {
+    "US": {
+      "path": "assets/audio/te-3-retry-r31-US.mp3",
+      "script": "A: I've reserved the seminar room. Could you pass the revised schedule on to the others?\nB: Sure. I'll message them this afternoon.\nA: Thanks. Make sure they know about the new starting time.\nB: I will.\nNarrator: What will the second speaker do?\nNarrator: A. Reserve a different room\nNarrator: B. Prepare for a seminar\nNarrator: C. Send the others the revised schedule\nNarrator: D. Cancel the afternoon meeting",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:19:37.226962+00:00",
+      "sha256": "4d74556198f4a56ff1c0a6f61dff37c472222c9c525b1a161d86ec0c02ca6861",
+      "ssmlSha256": "8578465325ffd68fe395b7958122c1a7b3c175fcec4b5c9eb2998cb2aee69f40",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-3-retry-r31-UK.mp3",
+      "script": "A: I've reserved the seminar room. Could you pass the revised schedule on to the others?\nB: Sure. I'll message them this afternoon.\nA: Thanks. Make sure they know about the new starting time.\nB: I will.\nNarrator: What will the second speaker do?\nNarrator: A. Reserve a different room\nNarrator: B. Prepare for a seminar\nNarrator: C. Send the others the revised schedule\nNarrator: D. Cancel the afternoon meeting",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:19:41.514826+00:00",
+      "sha256": "0cb79342d04a77aa0d2013cd4120f3dbe13be734983c3d20f7dc37c192aceed9",
+      "ssmlSha256": "e51359d65c8a89f2daeeca15404f09b855ec5e3a421287854a645c07c65eec75",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-3-retry-r31-AU.mp3",
+      "script": "A: I've reserved the seminar room. Could you pass the revised schedule on to the others?\nB: Sure. I'll message them this afternoon.\nA: Thanks. Make sure they know about the new starting time.\nB: I will.\nNarrator: What will the second speaker do?\nNarrator: A. Reserve a different room\nNarrator: B. Prepare for a seminar\nNarrator: C. Send the others the revised schedule\nNarrator: D. Cancel the afternoon meeting",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:19:47.685654+00:00",
+      "sha256": "e6280d7c1d070453ad7d134a4b91262875c6ff4d0d3384364434b86a7edab45c",
+      "ssmlSha256": "3dc789e40cd17dca2df04c1acca00f102b4f27d3d6283c01e02d7e35b3e60e54",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "t2-1-main-r32": {
+    "US": {
+      "path": "assets/audio/t2-1-main-r32-US.mp3",
+      "script": "Woman: You're coming to the retirement party, aren't you?\nMan: A. The invitation arrived this morning.\nMan: B. I have a client dinner that evening.\nMan: C. The party was enjoyable.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:09:11.012497+00:00",
+      "sha256": "b208fd92b27ec9dcee2868458b5fef790b9d36b21df1e34c651bed6a54a2b959",
+      "ssmlSha256": "38118d60f8531d012fa1d5b46f59830ff8d25623a39d98fdb1c0574032775d7e",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-1-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/t2-1-main-r32-UK.mp3",
+      "script": "Woman: You're coming to the retirement party, aren't you?\nMan: A. The invitation arrived this morning.\nMan: B. I have a client dinner that evening.\nMan: C. The party was enjoyable.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:09:14.716669+00:00",
+      "sha256": "fe0507ae15fd93cc583efa4303a138160cac72f730f10b5e85b0ad035b9c402c",
+      "ssmlSha256": "cc3b74dd8c09d8413823c5ee72aee595a027f3415f4a4fc7381f9f9599aabf52",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-1-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/t2-1-main-r32-AU.mp3",
+      "script": "Woman: You're coming to the retirement party, aren't you?\nMan: A. The invitation arrived this morning.\nMan: B. I have a client dinner that evening.\nMan: C. The party was enjoyable.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:09:18.461385+00:00",
+      "sha256": "c812272ec0881c1025a5dd082a0420d40d0a25f3901987466348c0cb30dc758c",
+      "ssmlSha256": "0bdda21f17bb93908d4fcb6f9f6815c8a8b97b0102b031e2de922bac0bbf8cc8",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-1-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "t2-1-retry-r32": {
+    "US": {
+      "path": "assets/audio/t2-1-retry-r32-US.mp3",
+      "script": "Woman: Will you be joining us for lunch on Friday?\nMan: A. The restaurant is across the street.\nMan: B. I ordered lunch an hour ago.\nMan: C. I'll be away on business that day.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:09:22.176571+00:00",
+      "sha256": "ce82ef712b39438f26f451253faab6f9c4bad7243d3e77b3ac86ed6f9792e1dc",
+      "ssmlSha256": "7ced21aa943562ecb6138e93af73379d758662e890fce7171dcc9bf140232d03",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-1-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/t2-1-retry-r32-UK.mp3",
+      "script": "Woman: Will you be joining us for lunch on Friday?\nMan: A. The restaurant is across the street.\nMan: B. I ordered lunch an hour ago.\nMan: C. I'll be away on business that day.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:09:25.892128+00:00",
+      "sha256": "da78433367d5fb4700505c34d7728bebfee789e4f6e9f6bc4e242ce8f60859f9",
+      "ssmlSha256": "9f295406e58d180b0d38b8493b697439ff828ab50bfd3fe4e3d1593c6eb185c0",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-1-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/t2-1-retry-r32-AU.mp3",
+      "script": "Woman: Will you be joining us for lunch on Friday?\nMan: A. The restaurant is across the street.\nMan: B. I ordered lunch an hour ago.\nMan: C. I'll be away on business that day.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:09:29.616643+00:00",
+      "sha256": "bffa47871a49ca0a1e4f915cf7fa2793ed5ee6c95c2a8c87cdf9df3eeb456a5e",
+      "ssmlSha256": "58f848515cc5a6f44ad3b181503171acdc216b2b54997cd1fc22b740719f8b8d",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-1-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "t2-2-main-r32": {
+    "US": {
+      "path": "assets/audio/t2-2-main-r32-US.mp3",
+      "script": "Woman: When will the client meeting begin?\nMan: A. At two fifteen, after the briefing.\nMan: B. There were fifteen people at the briefing.\nMan: C. The meeting room is large.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:09:33.247132+00:00",
+      "sha256": "139f15c3806d37d8001f80c8f260ba878d88564a112c3ea153522ceb603ad60b",
+      "ssmlSha256": "0c63125472b30ad46816ffb282fb814876791566b99942d565a64e1d389d3eab",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-2-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/t2-2-main-r32-UK.mp3",
+      "script": "Woman: When will the client meeting begin?\nMan: A. At two fifteen, after the briefing.\nMan: B. There were fifteen people at the briefing.\nMan: C. The meeting room is large.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:09:36.944188+00:00",
+      "sha256": "d182a413e283c1bebb9ebc11b8cb690c376a7371067f90a1e6aad07d48e450bb",
+      "ssmlSha256": "df4dd79ae0689d58365151e42f2733774448eba1cb862ea6864070d73631e810",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-2-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/t2-2-main-r32-AU.mp3",
+      "script": "Woman: When will the client meeting begin?\nMan: A. At two fifteen, after the briefing.\nMan: B. There were fifteen people at the briefing.\nMan: C. The meeting room is large.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:09:40.591964+00:00",
+      "sha256": "915887087e0c33d73a15e6df1cce2ccd623472817b49df77ce7295742fc1f0c0",
+      "ssmlSha256": "e9cc99a3743c5143c9b676a91e615c5d121b17bcd5b801ec089681f91a3aa764",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-2-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "t2-2-retry-r32": {
+    "US": {
+      "path": "assets/audio/t2-2-retry-r32-US.mp3",
+      "script": "Woman: When are we meeting the new manager?\nMan: A. The manager has a new office.\nMan: B. At three fifty, after the workshop.\nMan: C. About fifty copies, please.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:09:44.127628+00:00",
+      "sha256": "7d7747fccd8a262aaaa1cf5947fdd00d5e870d5e707713145139da8866b4d55e",
+      "ssmlSha256": "0a43cbf2cf408967bb84824f645de7da56411026f4b0bb724b45b2414adc11d7",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-2-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/t2-2-retry-r32-UK.mp3",
+      "script": "Woman: When are we meeting the new manager?\nMan: A. The manager has a new office.\nMan: B. At three fifty, after the workshop.\nMan: C. About fifty copies, please.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:09:48.131682+00:00",
+      "sha256": "c8b0f6bfcff8a0a560b3272f9d48952f52db02ea2b0f5ae496813173f81ed37d",
+      "ssmlSha256": "81d380de2271b49f7ba390239fbb14441c3b4cfdc1a82ca87da9f3230a3aa1be",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-2-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/t2-2-retry-r32-AU.mp3",
+      "script": "Woman: When are we meeting the new manager?\nMan: A. The manager has a new office.\nMan: B. At three fifty, after the workshop.\nMan: C. About fifty copies, please.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:09:51.738813+00:00",
+      "sha256": "716a1f4d7e33d091cce47e6356254a0da1721e82a5843edafa5f944d955d82c3",
+      "ssmlSha256": "d2bee19fff1bd84e93982849525b0e76bc52bf6195cf9e0aebda127f8a1b12c2",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-2-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "t2-3-main-r32": {
+    "US": {
+      "path": "assets/audio/t2-3-main-r32-US.mp3",
+      "script": "Woman: Would you like me to proofread your proposal?\nMan: A. The proposal was approved yesterday.\nMan: B. Yes, the printer is out of paper.\nMan: C. A second pair of eyes would help.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:09:55.311926+00:00",
+      "sha256": "90a5c07a4a9e417ca6887c9225fe907bd270d98e922fd5e8555725652ddaee38",
+      "ssmlSha256": "ce444fa366a7f31fed239d79a1551b4791bd27dcb48780ffe82716a025e27695",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-3-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/t2-3-main-r32-UK.mp3",
+      "script": "Woman: Would you like me to proofread your proposal?\nMan: A. The proposal was approved yesterday.\nMan: B. Yes, the printer is out of paper.\nMan: C. A second pair of eyes would help.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:09:59.044026+00:00",
+      "sha256": "858d7984151659917262c3b8cbddfd391ad7b75468c7cb69b2b00e7a6924f2f8",
+      "ssmlSha256": "93a34e9b689259a9ad6196226c5d0c4479b92cdd13f3e91452d3bad591c5d36b",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-3-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/t2-3-main-r32-AU.mp3",
+      "script": "Woman: Would you like me to proofread your proposal?\nMan: A. The proposal was approved yesterday.\nMan: B. Yes, the printer is out of paper.\nMan: C. A second pair of eyes would help.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:10:04.942675+00:00",
+      "sha256": "58fc67cd15d3cb3d49324c2b2cb6586035ceeda7cd39f143977e0ebcfa657062",
+      "ssmlSha256": "b95f59ce8342d0d17bfabba72ee4eac4129e0b8ba2abc493bc600be15deb0016",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-3-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "t2-3-retry-r32": {
+    "US": {
+      "path": "assets/audio/t2-3-retry-r32-US.mp3",
+      "script": "Woman: Would you like me to look over your report?\nMan: A. Another review would be helpful.\nMan: B. The reporter arrived this morning.\nMan: C. The meeting room is upstairs.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:10:08.630867+00:00",
+      "sha256": "9f36d048cdaa579546b78a260f90a36ed51a2f1ac5de5a6a843fb0ba57c33e70",
+      "ssmlSha256": "03fb69368092945fb912f6538137a5ee7f4f5b418c41b54141c981d8dafaae8c",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-3-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/t2-3-retry-r32-UK.mp3",
+      "script": "Woman: Would you like me to look over your report?\nMan: A. Another review would be helpful.\nMan: B. The reporter arrived this morning.\nMan: C. The meeting room is upstairs.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:10:12.307244+00:00",
+      "sha256": "eb877bbc68bd80bfd9a6ef9f0ccbebc4edeab2d79f3a723c5e70117ff571632f",
+      "ssmlSha256": "85843e39b5b552fb06a67a5b824a5f6d156457096106d3fa8582f942f5402110",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-3-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/t2-3-retry-r32-AU.mp3",
+      "script": "Woman: Would you like me to look over your report?\nMan: A. Another review would be helpful.\nMan: B. The reporter arrived this morning.\nMan: C. The meeting room is upstairs.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:10:15.884248+00:00",
+      "sha256": "4d248978e98f58eddfc855632e3f25fdb4148129f88e083648cf5cc1b503db80",
+      "ssmlSha256": "83e91448866452acf62b02de5c4ac80bf06a8c6e80020832291421704310a92d",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t2-3-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "toeic3-main-r32": {
+    "US": {
+      "path": "assets/audio/toeic3-main-r32-US.mp3",
+      "script": "Woman: The client meeting was scheduled for ten. We've moved it to eleven because the client's train is delayed.\nMan: Should I let the design team know?\nWoman: Yes, please. Ask them to bring the samples to Room Four instead of Room Two.\nMan: I will send an updated invitation now.\nWoman: Thanks. Please ask everyone to arrive ten minutes early.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:10:19.700255+00:00",
+      "sha256": "6cfc738ee63ec381149a1be884fdea4de51543bafb4e2cfd2f0cf4a7a89d3342",
+      "ssmlSha256": "71c3fb9c543ecc158102abc1d1b4890ea07d4e1e15940cd95b3a41b7fe1db3a3",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "toeic3-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/toeic3-main-r32-UK.mp3",
+      "script": "Woman: The client meeting was scheduled for ten. We've moved it to eleven because the client's train is delayed.\nMan: Should I let the design team know?\nWoman: Yes, please. Ask them to bring the samples to Room Four instead of Room Two.\nMan: I will send an updated invitation now.\nWoman: Thanks. Please ask everyone to arrive ten minutes early.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:10:23.964947+00:00",
+      "sha256": "0f06f10b335a993806e7cd1c4d0202d350b403d3aebb4c9781038c7c33dc5ff1",
+      "ssmlSha256": "d90ff11c652ec382e60713d4312700d7290c32841a186b484465981bb5a1e045",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "toeic3-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/toeic3-main-r32-AU.mp3",
+      "script": "Woman: The client meeting was scheduled for ten. We've moved it to eleven because the client's train is delayed.\nMan: Should I let the design team know?\nWoman: Yes, please. Ask them to bring the samples to Room Four instead of Room Two.\nMan: I will send an updated invitation now.\nWoman: Thanks. Please ask everyone to arrive ten minutes early.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:10:27.832109+00:00",
+      "sha256": "dd53f0ce8a47bf30baec79793497d3a9d053bbe88ae158fc5582c78a8b3b64fe",
+      "ssmlSha256": "259bacf6ac44101efff91783a229186e5b68683e4e991be2aba2446d9ac22e79",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "toeic3-main-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "t3-1-retry-r32": {
+    "US": {
+      "path": "assets/audio/t3-1-retry-r32-US.mp3",
+      "script": "Woman: What time does the factory tour start?\nMan: At two thirty. Visitors should arrive fifteen minutes early to collect their passes.\nWoman: Thanks. I'll let the rest of the group know.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:10:31.443985+00:00",
+      "sha256": "39502abef9e2409d7eea3332e95926cf5ecd9257172f72f32fc7df6733719816",
+      "ssmlSha256": "1583382d367ae174808b04369b5b585a2620b0677acb3dd9bcf4b1bc12f5f614",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t3-1-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/t3-1-retry-r32-UK.mp3",
+      "script": "Woman: What time does the factory tour start?\nMan: At two thirty. Visitors should arrive fifteen minutes early to collect their passes.\nWoman: Thanks. I'll let the rest of the group know.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:16:39.358607+00:00",
+      "sha256": "1afdabaead4a0e8d9db84fae9e60274fa260db230846b17ee78c2c599f0e310d",
+      "ssmlSha256": "82fc4ff1b16df98256b729243918d19d7514c49861a11cc65dfae41de1eb948c",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t3-1-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/t3-1-retry-r32-AU.mp3",
+      "script": "Woman: What time does the factory tour start?\nMan: At two thirty. Visitors should arrive fifteen minutes early to collect their passes.\nWoman: Thanks. I'll let the rest of the group know.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:16:43.107715+00:00",
+      "sha256": "c43bb8f7c1ba55fa696f3d52bff314cfe72ec4aa933c0a5b7b237abaced16e3c",
+      "ssmlSha256": "5b13dbacfd804973aa685a347c17b0323a07e4b9b63847712c7674ce69318fac",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t3-1-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "t3-2-retry-r32": {
+    "US": {
+      "path": "assets/audio/t3-2-retry-r32-US.mp3",
+      "script": "Woman: Is the training workshop still starting at eleven?\nMan: No, we've pushed it back to noon. The instructor's flight has been delayed.\nWoman: All right. I'll update the notice outside the room.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:16:57.158174+00:00",
+      "sha256": "08e4aa6e16800467856bba7a96f2f15649c93dfdee32c0b2522d2213467a386d",
+      "ssmlSha256": "7210442e7bd6c85b1cd7df38d4424bc967cc19ed650a65897ee3d275903e8005",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t3-2-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/t3-2-retry-r32-UK.mp3",
+      "script": "Woman: Is the training workshop still starting at eleven?\nMan: No, we've pushed it back to noon. The instructor's flight has been delayed.\nWoman: All right. I'll update the notice outside the room.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:17:00.880856+00:00",
+      "sha256": "b8c372b911fb66bce66bcdeaad7e1bfc1080cc8202c48766b66eadd5e0776c1d",
+      "ssmlSha256": "419f38f20e52874fbaab601e8023239f43bd8d811dc090f6d1b1ddf3476b6094",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t3-2-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/t3-2-retry-r32-AU.mp3",
+      "script": "Woman: Is the training workshop still starting at eleven?\nMan: No, we've pushed it back to noon. The instructor's flight has been delayed.\nWoman: All right. I'll update the notice outside the room.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:17:04.630531+00:00",
+      "sha256": "bde86b1915e4816975a6996b79efca5ccb738523b0383d5b1801b3a0a9122c40",
+      "ssmlSha256": "8a014e61db86d01f279788150300bbb9c46efa57fb8455c96101c7af6193942b",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t3-2-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "t3-3-retry-r32": {
+    "US": {
+      "path": "assets/audio/t3-3-retry-r32-US.mp3",
+      "script": "Woman: We have to move the orientation session to the library. The conference room won't be available.\nMan: In that case, I'll email the revised directions to everyone who registered.\nWoman: Good idea. Please send them this afternoon.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:17:08.162585+00:00",
+      "sha256": "6d5868c7b13fc3d9d814f52d6f2e5a7f742970f98c4656c088bf0be54214006f",
+      "ssmlSha256": "ce2ea999bb0b11ec6bd2cf1025ce54ccd50cfc892444aaa330bb3b581b95fe89",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t3-3-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/t3-3-retry-r32-UK.mp3",
+      "script": "Woman: We have to move the orientation session to the library. The conference room won't be available.\nMan: In that case, I'll email the revised directions to everyone who registered.\nWoman: Good idea. Please send them this afternoon.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:17:12.034043+00:00",
+      "sha256": "340bbd2eda2dc7d4dbd254210a2690dc82aeaf7c2fbccf6e4359a3afc628bd3d",
+      "ssmlSha256": "5eb9f37bbb1cbbeba6ff55a1f90239e07977112ea4b217a108b5752f54ab060f",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t3-3-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/t3-3-retry-r32-AU.mp3",
+      "script": "Woman: We have to move the orientation session to the library. The conference room won't be available.\nMan: In that case, I'll email the revised directions to everyone who registered.\nWoman: Good idea. Please send them this afternoon.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:17:15.727057+00:00",
+      "sha256": "6ea24fb6ee987c00ee5979cfeffee8ea55db1d9edfed4007439640df8b77e5c7",
+      "ssmlSha256": "4526ef092e3132e5ac430f7df7ba267e1734bd8193cc7dd898cd5a8919a615ff",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "t3-3-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "te-1-main-r32": {
+    "US": {
+      "path": "assets/audio/te-1-main-r32-US.mp3",
+      "script": "Woman: Are you free to meet at the library at two tomorrow?\nMan: I have a lab session until three. Could we make it a little later?\nWoman: Sure. Would three thirty work?\nMan: That would be fine. Thanks for being flexible.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:18:05.159847+00:00",
+      "sha256": "78d04631ba3586fe268cbc92dd1fc35265086f08331096f8c6678c06cc245af3",
+      "ssmlSha256": "c82c5dba00f15b8babe61baa0c742ffd38fb15cfd3f56156eee39bef4580a7a5",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-1-main",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/te-1-main-r32-UK.mp3",
+      "script": "Woman: Are you free to meet at the library at two tomorrow?\nMan: I have a lab session until three. Could we make it a little later?\nWoman: Sure. Would three thirty work?\nMan: That would be fine. Thanks for being flexible.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:18:08.955124+00:00",
+      "sha256": "63ce33ceba5c0ed6f7669e3a35f93bfab36c6318b7a69cce1924587875e3c393",
+      "ssmlSha256": "af177a9b1492bee6af458b82739343789b4864fb491476f87d6abd474a208594",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-1-main",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/te-1-main-r32-AU.mp3",
+      "script": "Woman: Are you free to meet at the library at two tomorrow?\nMan: I have a lab session until three. Could we make it a little later?\nWoman: Sure. Would three thirty work?\nMan: That would be fine. Thanks for being flexible.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:18:12.813124+00:00",
+      "sha256": "acdb92aed8cc859667b5b894b45fd17542f7704d5bcd6af55357c2cc043172a5",
+      "ssmlSha256": "67c2dbaf206e998af9559776f8bc3b5c96e0f43707341a0651c7ece634f95876",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-1-main",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "te-2-main-r32": {
+    "US": {
+      "path": "assets/audio/te-2-main-r32-US.mp3",
+      "script": "Woman: Shall we get the study group together at two tomorrow?\nMan: Could we start at three thirty instead of two? The room isn't available until then.\nWoman: That's fine. I'll reserve it for three thirty.\nMan: Great. See you there.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:18:39.990357+00:00",
+      "sha256": "4436654ec36ad9361882639835ce01f0afa9158b66b815b1ab1cd9728dfd1e94",
+      "ssmlSha256": "d26e50f0640303c0243bad6dc301ebfa143982a7a5a444307d99f044ab2c4abd",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-2-main",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/te-2-main-r32-UK.mp3",
+      "script": "Woman: Shall we get the study group together at two tomorrow?\nMan: Could we start at three thirty instead of two? The room isn't available until then.\nWoman: That's fine. I'll reserve it for three thirty.\nMan: Great. See you there.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:18:43.868259+00:00",
+      "sha256": "19a6d2597f3e420d1ddbb46d06fe8aaeb9dc3202f1204c5c62cbb2752f884a6a",
+      "ssmlSha256": "a0e2c76f4a28284b089e5efa9f567855e328a44ccbb5b2cbb9d41db7aee27c53",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-2-main",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/te-2-main-r32-AU.mp3",
+      "script": "Woman: Shall we get the study group together at two tomorrow?\nMan: Could we start at three thirty instead of two? The room isn't available until then.\nWoman: That's fine. I'll reserve it for three thirty.\nMan: Great. See you there.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:18:47.719279+00:00",
+      "sha256": "3e8706ff100eb561f22b57a2ca960b45698a9046c06f0d041d6c8c64b86703da",
+      "ssmlSha256": "8c29a7e1586cf4d02fa407f9d080e9c5e2d0af71604224d19f1bb8ff3a0a73f8",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-2-main",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "te-2-retry-r32": {
+    "US": {
+      "path": "assets/audio/te-2-retry-r32-US.mp3",
+      "script": "Woman: I was going to book the club room for five, but someone else is using it until five forty.\nMan: Let's meet at five forty, then.\nWoman: I'll let everyone know.\nMan: Thanks. That works for me.\nNarrator: What is the agreed time?\nNarrator: A. At five o'clock.\nNarrator: B. At five fourteen.\nNarrator: C. At four fifty.\nNarrator: D. At five forty.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:19:02.347748+00:00",
+      "sha256": "57dc20452c556fc25a84ab5a796da3f488493c0854b5f96f43a773ee761212c0",
+      "ssmlSha256": "ad3089d8c4769f83bb709cca8a3d29e7b322a5a2ff2dac43b388afe96f3a4f13",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-2-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/te-2-retry-r32-UK.mp3",
+      "script": "Woman: I was going to book the club room for five, but someone else is using it until five forty.\nMan: Let's meet at five forty, then.\nWoman: I'll let everyone know.\nMan: Thanks. That works for me.\nNarrator: What is the agreed time?\nNarrator: A. At five o'clock.\nNarrator: B. At five fourteen.\nNarrator: C. At four fifty.\nNarrator: D. At five forty.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:19:07.259267+00:00",
+      "sha256": "df3caae61bf6bd60c4276a3f877046ebff2a666ed8da85216aa2565a37fe4442",
+      "ssmlSha256": "389b9486c437b6f1db232c3b86f6973f5bf673cfd1525b52a7f22545b858a0b7",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-2-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/te-2-retry-r32-AU.mp3",
+      "script": "Woman: I was going to book the club room for five, but someone else is using it until five forty.\nMan: Let's meet at five forty, then.\nWoman: I'll let everyone know.\nMan: Thanks. That works for me.\nNarrator: What is the agreed time?\nNarrator: A. At five o'clock.\nNarrator: B. At five fourteen.\nNarrator: C. At four fifty.\nNarrator: D. At five forty.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:19:11.042793+00:00",
+      "sha256": "bf607fbe781a114bb6031c8ad37df285708986800f09b5e15791bb73eeefef2c",
+      "ssmlSha256": "744cce5aa9f532900659dc017744b183ec0a218fcf5217d8e00b618028be4af9",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-2-retry-r31",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "te-3-main-r32": {
+    "US": {
+      "path": "assets/audio/te-3-main-r32-US.mp3",
+      "script": "Woman: I've booked a room for our study group tomorrow. Could you tell the others?\nMan: Of course. I will let the group know tonight.\nWoman: Please remind them to bring their notes as well.\nMan: Will do.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:19:14.583063+00:00",
+      "sha256": "09365a8cf07ada5c371565987d0fa8bca4acf8f691563b9ca6f71950a31b23b1",
+      "ssmlSha256": "b1ce6270f063aeff2c9ba093613136cf6c86d3bcab728e13049dfd10fefe73df",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-3-main",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "UK": {
+      "path": "assets/audio/te-3-main-r32-UK.mp3",
+      "script": "Woman: I've booked a room for our study group tomorrow. Could you tell the others?\nMan: Of course. I will let the group know tonight.\nWoman: Please remind them to bring their notes as well.\nMan: Will do.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:19:18.854294+00:00",
+      "sha256": "13a86eba166ece75a18c1938ac1d65a6576bd580bb99f7732f42bdd8394ee396",
+      "ssmlSha256": "a13bfefb4973854e3703aaaf453414ca44425fdfdd5451a0aa4d09a6283609b3",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-3-main",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    },
+    "AU": {
+      "path": "assets/audio/te-3-main-r32-AU.mp3",
+      "script": "Woman: I've booked a room for our study group tomorrow. Could you tell the others?\nMan: Of course. I will let the group know tonight.\nWoman: Please remind them to bring their notes as well.\nMan: Will do.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:19:22.565725+00:00",
+      "sha256": "d9f0c0b569958d714ab415173f3dc8aa36751aefa11e1f0a9c0da3c620ce0f6e",
+      "ssmlSha256": "3253ddb72b79f8ea2bd2234a28a44ef86a29bf01e6d183f700ce82e0ae61ef45",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint",
+      "reusedFrom": "te-3-main",
+      "scriptLabelUpdatedAt": "2026-11-25T11:59:03.917503+00:00"
+    }
+  },
+  "te-1-question-r32": {
+    "US": {
+      "path": "assets/audio/te-1-question-r32-US.mp3",
+      "script": "Narrator: Why does the man suggest a later time?\nNarrator: A. He has a laboratory class.\nNarrator: B. The library closes early.\nNarrator: C. He needs to reserve a room.\nNarrator: D. He has forgotten the meeting place.",
+      "voice": "en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:59:42.715606+00:00",
+      "sha256": "de145123c05a80e1312319a67466079f29a006ddd120f0f3e54436dc5479ec09",
+      "ssmlSha256": "1a6eefa5262e34f0ac1c8f4f4daefc1bf54af9231c527a5ba4a6cd19d4830c6c",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-1-question-r32-UK.mp3",
+      "script": "Narrator: Why does the man suggest a later time?\nNarrator: A. He has a laboratory class.\nNarrator: B. The library closes early.\nNarrator: C. He needs to reserve a room.\nNarrator: D. He has forgotten the meeting place.",
+      "voice": "en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:59:46.824768+00:00",
+      "sha256": "879f66b2753bc9f615d1243027a592bd7f38d9328ea502ab6420d9c3725089cd",
+      "ssmlSha256": "87511338fc1a17c69e9c6f59edaa019ede3c27cec2b8c74caf8a0dd09f1c630d",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-1-question-r32-AU.mp3",
+      "script": "Narrator: Why does the man suggest a later time?\nNarrator: A. He has a laboratory class.\nNarrator: B. The library closes early.\nNarrator: C. He needs to reserve a room.\nNarrator: D. He has forgotten the meeting place.",
+      "voice": "en-AU-NatashaNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T11:59:50.501544+00:00",
+      "sha256": "78ec81a6b849281e2aae637bd14528b2f49c9a3f78f7855cd4e10b925e6b72c6",
+      "ssmlSha256": "57134e2a8784fb14a378a02e873ff883884152cc1054c9fe80028cf0e03d1a8c",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-1-retry-r32": {
+    "US": {
+      "path": "assets/audio/te-1-retry-r32-US.mp3",
+      "script": "Woman: Can we rehearse our presentation at four?\nMan: My tutorial doesn't finish until four thirty. How about five?\nWoman: Five is fine. I'll check whether the room is free.\nMan: Thanks. I'll see you then.\nNarrator: Why does the man suggest meeting at five?\nNarrator: A. He has a class until four thirty.\nNarrator: B. He needs to prepare the room.\nNarrator: C. He has another rehearsal at five.\nNarrator: D. He wants to cancel the presentation.",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T11:59:54.681384+00:00",
+      "sha256": "952d1011f1f859784bc10b94c173c7c191cbdb19ed839fc6345a2206f5dd808b",
+      "ssmlSha256": "13a031ba5a1c96af76f3ddbde63ce376d2ccd29f6d305c8da0b85411d05833cc",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-1-retry-r32-UK.mp3",
+      "script": "Woman: Can we rehearse our presentation at four?\nMan: My tutorial doesn't finish until four thirty. How about five?\nWoman: Five is fine. I'll check whether the room is free.\nMan: Thanks. I'll see you then.\nNarrator: Why does the man suggest meeting at five?\nNarrator: A. He has a class until four thirty.\nNarrator: B. He needs to prepare the room.\nNarrator: C. He has another rehearsal at five.\nNarrator: D. He wants to cancel the presentation.",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T11:59:58.698206+00:00",
+      "sha256": "45a40ea9ebea0406165981ef09d5bbef73824f9483a6025691e9f4c8bc525ab5",
+      "ssmlSha256": "6905b4365c0725c6e73292a05c52958c7a7b9ddbe8b655a00394229a2152c3a1",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-1-retry-r32-AU.mp3",
+      "script": "Woman: Can we rehearse our presentation at four?\nMan: My tutorial doesn't finish until four thirty. How about five?\nWoman: Five is fine. I'll check whether the room is free.\nMan: Thanks. I'll see you then.\nNarrator: Why does the man suggest meeting at five?\nNarrator: A. He has a class until four thirty.\nNarrator: B. He needs to prepare the room.\nNarrator: C. He has another rehearsal at five.\nNarrator: D. He wants to cancel the presentation.",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T12:00:02.772660+00:00",
+      "sha256": "fb2cfd0cb2e283b26f69e06d8903c8047a8d2eade02332f8883ead30a85d07ab",
+      "ssmlSha256": "6e4c8671809d1c4df54b8e8dcb7bdd153340d6ee84ac4d933f72103e710a114b",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-3-question-r32": {
+    "US": {
+      "path": "assets/audio/te-3-question-r32-US.mp3",
+      "script": "Narrator: What will the man do tonight?\nNarrator: A. Book a room\nNarrator: B. Inform the other members\nNarrator: C. Prepare an experiment\nNarrator: D. Go to the library",
+      "voice": "en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T12:00:06.365555+00:00",
+      "sha256": "0a5a5905ed4facba46ac8f38c570819254ff90ed74b82e1f47bcc43bd792f63d",
+      "ssmlSha256": "561328c9144d1cf5b8e1195a927a6fd6587dfef29e58cc27d55702a10699f103",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-3-question-r32-UK.mp3",
+      "script": "Narrator: What will the man do tonight?\nNarrator: A. Book a room\nNarrator: B. Inform the other members\nNarrator: C. Prepare an experiment\nNarrator: D. Go to the library",
+      "voice": "en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T12:00:10.178398+00:00",
+      "sha256": "d2d836737b6485c631aa2d26faff04046f86afa482b06c0b1391a4b92d3e1166",
+      "ssmlSha256": "917ca990bc493d62847b451dc7b464e161cbb17d035eb12b0ebc56223d21491f",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-3-question-r32-AU.mp3",
+      "script": "Narrator: What will the man do tonight?\nNarrator: A. Book a room\nNarrator: B. Inform the other members\nNarrator: C. Prepare an experiment\nNarrator: D. Go to the library",
+      "voice": "en-AU-NatashaNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T12:00:13.661989+00:00",
+      "sha256": "07090624362a78b8bc86b8d00ffffd4d457ca8a4fff0a7f51271ec9102a353d6",
+      "ssmlSha256": "ff9cd9fbc584d3b54e7b8b37ee6a7dcb570ebdee28fcf8762478131b554ce6cc",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
+  },
+  "te-3-retry-r32": {
+    "US": {
+      "path": "assets/audio/te-3-retry-r32-US.mp3",
+      "script": "Woman: I've reserved the seminar room. Could you pass the revised schedule on to the others?\nMan: Sure. I'll message them this afternoon.\nWoman: Thanks. Make sure they know about the new starting time.\nMan: I will.\nNarrator: What will the man do?\nNarrator: A. Reserve a different room\nNarrator: B. Prepare for a seminar\nNarrator: C. Send the others the revised schedule\nNarrator: D. Cancel the afternoon meeting",
+      "voice": "en-US-GuyNeural / en-US-JennyNeural",
+      "locale": "en-US",
+      "generatedAt": "2026-11-25T12:00:19.201829+00:00",
+      "sha256": "af4ee470a2f0c74e1860bdef1607c3243320afe5d3b2b04d5393b309e0e31138",
+      "ssmlSha256": "d07092e21da5bfc02a3d76be4557c563a8a0ac218b7e65ecf7172cdf4d20fa88",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "UK": {
+      "path": "assets/audio/te-3-retry-r32-UK.mp3",
+      "script": "Woman: I've reserved the seminar room. Could you pass the revised schedule on to the others?\nMan: Sure. I'll message them this afternoon.\nWoman: Thanks. Make sure they know about the new starting time.\nMan: I will.\nNarrator: What will the man do?\nNarrator: A. Reserve a different room\nNarrator: B. Prepare for a seminar\nNarrator: C. Send the others the revised schedule\nNarrator: D. Cancel the afternoon meeting",
+      "voice": "en-GB-RyanNeural / en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "generatedAt": "2026-11-25T12:00:23.411958+00:00",
+      "sha256": "5f313199892ff3653d17e07425e144838325589fa218d87e34fd29f47d3d27f6",
+      "ssmlSha256": "a1af8bda1dddb770ff0499e7300f39ce279b496ffa835850c9ae5dc2fd905eb8",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    },
+    "AU": {
+      "path": "assets/audio/te-3-retry-r32-AU.mp3",
+      "script": "Woman: I've reserved the seminar room. Could you pass the revised schedule on to the others?\nMan: Sure. I'll message them this afternoon.\nWoman: Thanks. Make sure they know about the new starting time.\nMan: I will.\nNarrator: What will the man do?\nNarrator: A. Reserve a different room\nNarrator: B. Prepare for a seminar\nNarrator: C. Send the others the revised schedule\nNarrator: D. Cancel the afternoon meeting",
+      "voice": "en-AU-NatashaNeural / en-AU-WilliamNeural",
+      "locale": "en-AU",
+      "generatedAt": "2026-11-25T12:00:27.408490+00:00",
+      "sha256": "311d6b94f503e0e9191fdea6c62d66e7e7c1907dbfe689edb3c2386dfe6ac7f3",
+      "ssmlSha256": "762244c8ff352cc428a44b9b38b9728736f0cae56750f5d855b8f9337bcc2646",
+      "provider": "Azure AI Speech",
+      "modelVersion": "Not reported by synthesis endpoint"
+    }
   }
 };

@@ -43,9 +43,15 @@ def ssml_for(lesson, accent):
         match = re.match(r'^([A-Za-z ]{1,30}):\s*(.+)$', line)
         if match:
             name, text = match.groups()
-            if name not in speakers:
-                speakers[name] = first if len(speakers) % 2 == 0 else second
-            voice = speakers[name]
+            # Explicit roles must keep their voice even if the man speaks first.
+            role_voice = {'woman': first, 'man': second, 'narrator': first}.get(name.lower())
+            if role_voice:
+                voice = role_voice
+            else:
+                # Preserve the original voice order for archived/custom scripts.
+                if name not in speakers:
+                    speakers[name] = first if len(speakers) % 2 == 0 else second
+                voice = speakers[name]
         else:
             voice, text = first, line
         if text.strip():

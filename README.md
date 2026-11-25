@@ -12,20 +12,20 @@ A small classroom service for KNU Applied Linguistics group 4. Target: B1–B2 u
 
 ## Learning flow
 
-Choose TOEIC Part 2/3/4 or TEPS conversation practice, and US/UK/AU accent. Three diagnostic questions route the learner to one actual missed skill: numbers/changed details, intent/reason, or paraphrase. If all are correct, the session is clearly labeled extension practice.
+Choose TOEIC Part 2/3/4 or TEPS conversation practice, and US/UK/AU accent. Three diagnostic questions route the learner to one actual missed skill: numbers/changed details, intent/reason, or paraphrase. If all are correct, the session ends after the result overview: no remedial feedback, transfer recheck or scheduled error review.
 
-1. State a reason before seeing the explanation.
-2. Compare the source clue; optionally ask the AI tutor a question, then revise the explanation.
-3. Write the clue sentence from audio; inspect differences and submit a correction.
+1. Answer three diagnostic questions and review correct/incorrect labels. All-correct sessions finish here.
+2. For a missed item, enter one reason for the chosen answer and receive a short GPT reply grounded in the script.
+3. Write the clue sentence from audio. Correct answers continue directly; only errors require correction practice.
 4. Match an equivalent expression.
-5. Shadow the model and produce a new sentence. Optional local recording; no automatic pronunciation scoring.
+5. Read the model sentence, optionally send a recording to Azure pronunciation assessment, compare word-level accuracy and retry. There are no required notes, new-sentence fields or checkboxes; this step can be skipped. Assessment uses an en-US model and is separate from meaning/intelligibility and official exam scores.
 6. Answer a different transfer item. Save a next-day retrieval task.
 
 The original linked-tab mockups are design references. The public app does not accept provider keys in a browser. The older content studio is preserved at `studio.html`, available only on the local server.
 
 ## Boundaries
 
-- Original AI-assisted practice, not official exam questions, a full mock test, or a score predictor. TEPS questions/options have oral recordings; visible options are explicitly a learning aid. TOEIC Part 2 also has spoken options.
+- Original AI-assisted practice, not official exam questions, a full mock test, or a score predictor. TOEIC Part 2 and TEPS answer buttons show letters only until grading. Questions/options are spoken; optional transcript disclosure is recorded as reading support. TEPS Part 3 uses a separate conversation for each question.
 - The short fixed bank is a demo: 12 diagnostic questions, 12 transfer questions, and linked practice for each diagnostic item. Repeating a pack repeats its questions.
 - Synthesis has preselected locale voices and a cached manifest, not verified human accent ratings. Auditory quality and level need human review.
 - Progress is browser-local; export JSON includes exact learner actions, AI responses when used, and content snapshot. No cross-device account or payment service.
