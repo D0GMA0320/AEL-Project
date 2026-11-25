@@ -1,0 +1,136 @@
+{
+  "lessons": [
+    {
+      "id": "t2-1-main",
+      "script": "A: You're coming to the retirement party, aren't you?\nB: A. It is printed on the invitation.\nB: B. I have a client dinner that evening.\nB: C. The party was enjoyable."
+    },
+    {
+      "id": "t2-1-focus",
+      "script": "I have a client dinner that evening."
+    },
+    {
+      "id": "t2-1-retry",
+      "script": "A: Can you join our lunch on Friday?\nB: I will be on a business trip that day."
+    },
+    {
+      "id": "t2-2-main",
+      "script": "A: When will the client meeting begin?\nB: A. At two fifteen, after the briefing.\nB: B. There are fifty people.\nB: C. The meeting room is large."
+    },
+    {
+      "id": "t2-2-focus",
+      "script": "At two fifteen, after the briefing."
+    },
+    {
+      "id": "t2-2-retry",
+      "script": "A: When should we meet the new manager?\nB: At three fifty, after the workshop."
+    },
+    {
+      "id": "t2-3-main",
+      "script": "A: Would you like me to proofread your proposal?\nB: A. The proposal is on the desk.\nB: B. Yes, the desk is new.\nB: C. A second pair of eyes would help."
+    },
+    {
+      "id": "t2-3-focus",
+      "script": "A second pair of eyes would help."
+    },
+    {
+      "id": "t2-3-retry",
+      "script": "A: Would you like me to check your report?\nB: Another review would be useful."
+    },
+    {
+      "id": "toeic3-main",
+      "script": "Alex: The client meeting was at ten, but it has moved to eleven because the train is delayed.\nMorgan: Should I tell the design team?\nAlex: Yes. Ask them to bring the samples to Room Four instead of Room Two.\nMorgan: I will send an updated invitation now.\nAlex: Please ask everyone to arrive ten minutes early."
+    },
+    {
+      "id": "t3-1-focus",
+      "script": "Please ask everyone to arrive ten minutes early."
+    },
+    {
+      "id": "t3-1-retry",
+      "script": "The tour starts at two thirty. Please arrive fifteen minutes early."
+    },
+    {
+      "id": "t3-2-focus",
+      "script": "It has moved to eleven because the train is delayed."
+    },
+    {
+      "id": "t3-2-retry",
+      "script": "The workshop will begin at noon rather than eleven because the instructor's flight is delayed."
+    },
+    {
+      "id": "t3-3-focus",
+      "script": "I will send an updated invitation now."
+    },
+    {
+      "id": "t3-3-retry",
+      "script": "A: The venue has changed to the library.\nB: I will email the revised directions to all participants."
+    },
+    {
+      "id": "toeic4-main",
+      "script": "Good afternoon, passengers for Flight 417. Boarding has moved from gate B12 to gate C4 because of an aircraft inspection. Boarding begins at four forty-five, fifteen minutes later than planned. Your checked bags will be transferred automatically. Please go directly to gate C4."
+    },
+    {
+      "id": "t4-1-focus",
+      "script": "Boarding begins at four forty-five."
+    },
+    {
+      "id": "t4-1-retry",
+      "script": "The bus was scheduled for six ten. It will now leave at six forty."
+    },
+    {
+      "id": "t4-2-focus",
+      "script": "The gate has changed because of an aircraft inspection."
+    },
+    {
+      "id": "t4-2-retry",
+      "script": "The museum entrance has moved to the east side because the main doors are being repaired."
+    },
+    {
+      "id": "t4-3-focus",
+      "script": "Your checked bags will be transferred automatically."
+    },
+    {
+      "id": "t4-3-retry",
+      "script": "Your reservation will be moved to the new hotel automatically. You do not need to contact either hotel."
+    },
+    {
+      "id": "teps-main",
+      "script": "A: Can you join our study group at the library tomorrow?\nB: I have a lab session until three. Could we start at three thirty instead of two?\nA: That works. I will book a room for three thirty. Please send everyone the new time.\nB: Sure. I will let the group know tonight."
+    },
+    {
+      "id": "te-1-focus",
+      "script": "I have a lab session until three."
+    },
+    {
+      "id": "te-1-retry",
+      "script": "A: Can we rehearse at four?\nB: My tutorial ends at four thirty. Could we meet at five?\nWhy does the second speaker request five o'clock?\nA. They have an earlier class.\nB. They need a new room.\nC. They dislike rehearsals.\nD. They want to cancel."
+    },
+    {
+      "id": "te-1-question",
+      "script": "Why does the second speaker suggest a later time?\nA. The library opens late.\nB. The room is full.\nC. They have a laboratory session.\nD. They forgot the meeting."
+    },
+    {
+      "id": "te-2-focus",
+      "script": "Could we start at three thirty instead of two?"
+    },
+    {
+      "id": "te-2-retry",
+      "script": "A: The club meeting was at five, but the room is only free at five forty.\nB: All right. Let us meet at five forty.\nWhat is the agreed time?\nA. 5:00\nB. 5:14\nC. 4:50\nD. 5:40"
+    },
+    {
+      "id": "te-2-question",
+      "script": "When will the study group meet?\nA. 2:00\nB. 3:00\nC. 3:30\nD. 2:30"
+    },
+    {
+      "id": "te-3-focus",
+      "script": "I will let the group know tonight."
+    },
+    {
+      "id": "te-3-retry",
+      "script": "A: I have reserved the seminar room. Can you pass the new schedule on to the others?\nB: Yes, I will message them this afternoon.\nWhat will the second speaker do?\nA. Reserve a room\nB. Attend a seminar\nC. Share the updated schedule\nD. Cancel the messages"
+    },
+    {
+      "id": "te-3-question",
+      "script": "What will the second speaker do tonight?\nA. Book a room\nB. Inform the other members\nC. Prepare an experiment\nD. Go to the library"
+    }
+  ]
+}

@@ -37,3 +37,27 @@ Live Azure synthesis, live OpenAI responses, actual audio quality and speaker ou
 - Completed the hotel lesson in reading mode, including a deliberate QA error, targeted follow-up and results. Collapsed AI explanation panel stays open when a prepared explanation is requested.
 - Desktop and 390px mobile views inspected; no browser console errors observed.
 - JavaScript syntax and credential-setup PowerShell syntax checked. No live credential validation or API call was performed.
+
+## November 25, 2026 — v3 exam trainer / internet demo
+
+Implemented a short TOEIC Part 2/3/4 and TEPS dialogue trainer with actual-error routing, reasoning-before-feedback, dictation correction, expression matching, local optional speaking recording, a different transfer question, and scheduled retrieval. The fixed bank has 12 diagnostic and 12 transfer questions. The 6–8 minute session target and learner level are estimates; a real learner pilot is pending.
+
+Checks completed:
+- Python: 19 checks passed, including public authentication, expiry, host/origin checks, private-file blocking, structured coach input, per-run/session call limits and malformed credentials.
+- JavaScript: 12 existing core checks plus 7 trainer checks passed (19 total). No fabricated weakness on all-correct sessions; actual missed-item targeting; dictation omission detection; next-day scheduling; valid fixed keys and audio IDs.
+- Browser: completed the diagnostic-to-transfer flow with a deliberately missed timing question. Missing `ten` was detected; corrected dictation, expression selection, optional speaking path, separate final results and next-day history were verified. This is a QA rehearsal, NOT participant performance evidence.
+- Desktop and narrow/mobile layouts inspected; public code-entry screen and authenticated home verified. Actual microphone recording on a classroom device still needs a human permission and audio test; the no-recording alternative was exercised.
+- Azure: 99 trainer MP3s (33 scripts × US/UK/AU) generated successfully. Manifest script/hash consistency and MPEG frame duration checks passed. Longest clip about 23 seconds; main passages about 11–22 seconds. Human accent/naturalness review remains pending.
+- Public HTTPS: landing 200; anonymous health/audio denied; authenticated audio 200; `.env` and presenter studio 404. An audio file transferred in about 0.35s during the test; this is a single observation on this connection, not an SLA or a classroom-network test.
+- Live OpenAI: initial call failed with credit_balance_exhausted (HTTP 429). After user updated the account, the structured coach replied successfully in about 3.3s through the tunnel. The response explained 11:00 minus ten minutes and asked a checking question. Exact request and raw output saved in `.local/evidence/`. No credentials included.
+- Cloudflare: first creation attempt returned 429; a later retry succeeded. Temporary URLs change on restart and depend on the host PC remaining online. Classroom mobile-data verification is still recommended.
+
+Limits: no official test score, no automatic pronunciation score, no validated learning gain, no payment/user-account system, no production availability guarantee. PDF slides and video recording still require final observations and member names; presentation outline and a ≤90-second demo script are supplied.
+
+## November 25, 2026 — account-owned Cloudflare hostname
+
+- Migrated this PC to `https://ael.52sierra.net`, routed by the user's existing `Cloudflared` Windows service to `http://127.0.0.1:8767`. The temporary connector was stopped. The launcher now starts only its Python server when `.local/demo/named-origin.txt` is set; it neither reads a tunnel token nor manages the separate Windows service.
+- All 23 Python tests passed. New checks cover exact named-domain Host/Origin acceptance, unrelated-origin rejection, malformed-origin rejection, saved configuration/quick fallback, and starting/stopping only the owned server in named mode.
+- Live HTTPS checks using the Windows HTTP client: landing 200; anonymous health/audio 401; login 200 with HttpOnly/Secure/SameSite=Strict cookie; authenticated health/audio 200 (26,352-byte AU focus clip); studio and private share file 404; `.env` 403; unrelated-origin POST 403. A separate Python HTTP probe received 403 before an app request was logged; Windows HTTP checks succeeded. No browser rehearsal or new paid AI call was performed in this hostname-only migration.
+- Address remains stable across restarts; the launcher still generates a new classroom code and invalidates old login sessions. After a PC reboot, start the Python app using `start-internet-demo.cmd`, even if the Cloudflare service is already running. PC uptime, network availability and classroom-device testing remain relevant limitations.
+- Updated the classroom guide, README and distributable. Local hostname configuration, credentials and private runtime files remain outside the ZIP.

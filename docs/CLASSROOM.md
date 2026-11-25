@@ -1,34 +1,52 @@
-# Classroom delivery
+# Classroom internet demo from this PC
 
-## Recommended: prepared audio + portable copy
+## Existing Cloudflare account and stable address
 
-Use the machine that will run the presentation, or bring a laptop and connect it to the classroom projector. Prepare Azure audio once on the development PC. Copy the extracted portable folder using a USB drive. Open `index.html` in Chrome or Edge. There are no externally hosted fonts, frameworks, or CDN assets. Quizzes and prepared explanations do not require internet access.
+This PC is configured for **https://ael.52sierra.net**. The account's `Cloudflared` Windows service routes that hostname to `http://127.0.0.1:8767`. The app launcher starts only the classroom server in this mode; it does not start a second connector or read your tunnel token.
 
-**An empty audio manifest is not a completed audio demo.** Before class, generate MP3s, play each one, then rebuild and copy the ZIP. Browser speech remains an optional fallback only when the exact requested locale exists.
+1. Keep the `Cloudflared` Windows service running. Start the app with `start-internet-demo.cmd`.
+2. Open the stable address and use the new classroom code from the launcher or `.local/demo/share.txt`. The address stays the same across restarts; the code and login sessions do not.
+3. Keep this PC powered and online. The Windows service starts the tunnel only, **not the Python app**. After reboot, run the app launcher again.
+4. `stop-internet-demo.cmd` stops the classroom server; the separate Cloudflare service remains running. The public app is unavailable until the server starts again.
 
-## Live AI mode
+The local setting `.local/demo/named-origin.txt` contains only `https://ael.52sierra.net`. It is not included in the classroom ZIP. On another PC, set up the connector there and create this file with your chosen HTTPS hostname (no trailing slash). The server accepts that exact hostname and origin; it does not accept arbitrary domains. Configure the published route with its default Host header.
 
-On a PC with Python 3.10+, configure `.env` locally and launch `start-classroom.cmd`. Open the printed localhost URL. Internet access is needed only for explicit Live AI actions. Audio remains pre-generated and local. The app records API request latency; it does not promise a response time before testing.
+For a temporary fallback, stop the current demo and run `python tools/internet_demo.py --quick`. The saved named address is used again on the next normal launch. An explicit `--public-url https://your-host.example` overrides the saved address for one launch only.
 
-The server binds only to `127.0.0.1`. It is not a classroom LAN server or a public deployment. This intentionally avoids exposing paid API access. If you use Remote Desktop to the prepared development machine, keep the browser and server there; verify projector display and audio forwarding beforehand. Remote access software setup is outside this delivered package.
+## Temporary tunnel on an unconfigured PC
 
-## If the classroom PC has no Python
+1. Run `start-internet-demo.cmd`. First use downloads Cloudflare's official Windows tunnel binary into `.local/demo/` and verifies the SHA256 digest supplied by the GitHub release. No machine-wide install.
+2. Copy the HTTPS address and classroom code displayed in that window. They are also in `.local/demo/share.txt`. Keep that file private to the presenters/class.
+3. Open the address on a phone using mobile data, enter the classroom code, and test one audio clip and one AI question.
+4. Keep the host PC on, powered, connected, and the demo process running throughout class. While the launcher runs it requests Windows stay awake; it does not change power settings. Sleep, reboot, network loss, or stopping the launcher interrupts service.
+5. Run `stop-internet-demo.cmd` afterward. A new launch gives a **new address and code**. Existing URLs are not permanent.
 
-Use the file-based portable edition with prepared explanations. For chatbot explanation, export a prompt and use ChatGPT manually if permitted; record the exact model, date, prompt and unchanged response yourself. Do not label prepared explanations as live-generated AI.
+No port forwarding, Proxmox, domain, or Cloudflare account is required for this temporary tunnel. Cloudflare carries the HTTPS traffic between visitors and the local app. Quick Tunnels have no uptime guarantee and are intended for tests/demos, not production. [Cloudflare documentation](https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/).
 
-## Rehearsal checklist
+## What is exposed
 
-- [ ] Prepare and listen to all three accents for the selected lesson.
-- [ ] Test a missing or unavailable audio case; verify that no different accent is substituted.
-- [ ] Test speaker volume on the actual presentation machine.
-- [ ] Complete one lesson, one wrong answer, targeted follow-up, and explanation.
-- [ ] Export the JSON and verify it opens and contains the actual voice and conditions.
-- [ ] Test one Live AI request and inspect `.local/evidence` for unchanged response data.
-- [ ] Record the real request latency. Use prepared explanations if it disrupts the demo.
-- [ ] Rehearse the full screen recording; trim to at most 90 seconds without presenting edits as live latency.
-- [ ] Keep a PDF of the slides, a screen recording, the portable app and evidence JSON on USB.
-- [ ] Avoid displaying API credentials during screen recording or projection.
+The tunnel reaches only the classroom server on `127.0.0.1:8767`. Regular local presenter work uses port 8765. The public mode denies `/studio.html`, arbitrary `/api/chat` generation, `.env`, `.local`, server source, and directory traversal. The learner page's static code/content can be downloaded without a code; audio, provider status and coach requests require an authenticated session. API keys remain in the local `.env`.
 
-## Data and rollback
+Entry cookies expire after 8 hours; sign in again with the same classroom code. A service restart also invalidates sessions. AI limits: 3 requests/minute/session, 100 requests total per server run, one provider call at a time, and a short fixed question context. If busy, learners continue with the prepared explanation. No microphone upload endpoint is provided.
 
-The original one-file prototype is preserved at `docs/original-prototype.html`. No existing `.env` is overwritten by application updates. Browser records are local to the browser and origin: file-based and localhost sessions may have different storage. Export before switching machines, browser profiles or origins. Treat shared-classroom browser storage as temporary; use an anonymous learner label and keep exported evidence with the group.
+## Tomorrow's 90-second demonstration
+
+Preflight before class: open on mobile data; test audio; test the AI tutor; check Windows won't reboot during the presentation; have a prerecorded backup. Use a completed rehearsal or explain that the demonstration compresses a 6–8 minute session.
+
+- 0–15s: open the link on a second device, select TOEIC Part 3 and AU accent.
+- 15–30s: show a wrong answer about 11:00 versus arriving ten minutes early.
+- 30–45s: learner explains their choice; source clue appears; ask a short AI clarification.
+- 45–60s: show the linked dictation correction and expression task.
+- 60–75s: produce a new sentence; optional self-recording.
+- 75–90s: new-context question, separate result counts, tomorrow's retrieval task.
+
+Do not claim the demo proves learning gains. Full participant timing and delayed recall still need measurement. Do not show `.env` or provider keys in the recording.
+
+## Fallback and troubleshooting
+
+- Named URL unavailable: confirm the `Cloudflared` Windows service is running and the tunnel is Healthy in the account dashboard; confirm its route is `http://127.0.0.1:8767`; check `.local/demo/server.log`. Restarting the app keeps the same hostname. Connector service logs are separate from the app's temporary-tunnel log.
+- Temporary URL unavailable: check `.local/demo/tunnel.log` and `.local/demo/server.log`; restart for a new URL. Restricted networks may block the tunnel's outbound connection. Use the local page or classroom ZIP if required.
+- Port 8767 already in use: stop the old demo using `stop-internet-demo.cmd`, wait for it to exit, then restart. Do not terminate unrelated processes.
+- AI busy/limit/error: prepared explanations and cached audio remain usable.
+- Microphone denied: use “녹음 없이 직접 말하기”, speak, type the sentence, and self-check. HTTPS is required for microphone access on remote devices.
+- Logs/evidence and `.env` are deliberately excluded from the ZIP. Transfer selected redacted evidence separately if needed for slides.

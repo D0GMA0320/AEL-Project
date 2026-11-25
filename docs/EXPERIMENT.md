@@ -44,3 +44,11 @@ Use the app's Evidence page. Leave observations and results as “not yet tested
 | Integration, testing and presentation assembly | To fill | Commits, checks, final slides/recording |
 
 These are proposed responsibilities, not claims that contributions have occurred.
+
+## Revised exam-focused pilot (November 25)
+
+Use one 6–8 minute session, one missed skill, and a first-seen transfer item. Before intervention, record the selected answer and learner's own reason. Preserve dictation attempt, correction, explanation revision, produced sentence, transfer result, and audio/reading support events in the session JSON. Do not compare the 3-item diagnostic proportion with the single transfer item as a validated gain score.
+
+For the real failure case, inspect the provided reference Part 2 bank: eight answer indices are 0. The revised demo Part 2 indices are 1, 0, 2. Show source before/after as a content-design failure and mitigation, not as a learner experiment. Then test a real learner without coaching which choice to make. Ask what evidence they used. Tomorrow, use the retrieval view and record whether it is an early or scheduled review. Same-item recall is not evidence of new-item transfer.
+
+Human checks still needed: appropriateness for the intended learner, answer-key/source agreement, naturalness of all selected voices, microphone behavior on the presentation device, and whether the learner would return voluntarily. Do not fill in names, scores, times or positive feedback that were not observed.

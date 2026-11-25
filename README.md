@@ -1,92 +1,39 @@
-# AI Adaptive English Lab
+# AEL v3: exam practice with linked feedback
 
-KNU 2026 fall semester Applied Linguistics, group 4 — **AI를 활용한 언어학습**.
+A small classroom service for KNU Applied Linguistics group 4. Target: B1–B2 university learners preparing for TOEIC/TEPS who need to understand and repair listening mistakes. Learner level and 6–8 minute duration are design estimates, pending pilot validation.
 
-A small classroom learning application: accent-diverse listening → contextual comprehension/grammar/vocabulary → rule-based targeted practice → prepared or live AI explanation. Presentation: November 26, 2026.
+## Run
 
-## Start here
+- `start-classroom.cmd`: local practice at http://127.0.0.1:8765. Presenter tools: http://127.0.0.1:8765/studio.html.
+- `start-internet-demo.cmd`: HTTPS service from **this Windows PC**, with a classroom entry code. This PC uses the existing Cloudflare connector at **https://ael.52sierra.net**; unconfigured copies use a temporary tunnel. No Proxmox or inbound router port needed. See [classroom guide](docs/CLASSROOM.md).
+- `stop-internet-demo.cmd`: stop the demo server and any temporary tunnel it started. A separately installed Cloudflare service stays running.
+- `configure-services.cmd`: server-side Azure Speech and OpenAI credentials; see [credentials](docs/CREDENTIALS.md).
+- `prepare-classroom.cmd`: generate/cache all trainer recordings, then create `dist/AEL-Classroom.zip`. Completed audio is reused.
 
-1. **No installation:** open `index.html`. All quizzes, translations, prepared explanations, lesson import and browser-local evidence storage work directly from the folder. Browser speech requires an installed matching accent; missing accents are never substituted.
-2. **Reliable classroom audio:** configure Azure locally, double-click `prepare-classroom.cmd` before class, and listen to the recordings. Playback then uses local MP3 files with no synthesis request or network delay.
-3. **Live OpenAI feedback:** configure `.env`, then double-click `start-classroom.cmd`. Open `http://127.0.0.1:8765`. Python 3.10+ is required; no third-party Python packages are needed. API access and billing are separate from a ChatGPT subscription.
-4. **USB delivery:** run `python tools/package.py`. Extract `dist/AEL-Classroom.zip` on the classroom computer. Do not run it inside the ZIP viewer. Rebuild after generating audio.
+## Learning flow
 
-## Configure the two services
+Choose TOEIC Part 2/3/4 or TEPS conversation practice, and US/UK/AU accent. Three diagnostic questions route the learner to one actual missed skill: numbers/changed details, intent/reason, or paraphrase. If all are correct, the session is clearly labeled extension practice.
 
-See [What to enter for each credential](docs/CREDENTIALS.md) for the four fields and their exact sources.
+1. State a reason before seeing the explanation.
+2. Compare the source clue; optionally ask the AI tutor a question, then revise the explanation.
+3. Write the clue sentence from audio; inspect differences and submit a correction.
+4. Match an equivalent expression.
+5. Shadow the model and produce a new sentence. Optional local recording; no automatic pronunciation scoring.
+6. Answer a different transfer item. Save a next-day retrieval task.
 
-Copy `.env.example` to `.env` in this folder. Fill it locally; never paste keys into chat or commit them.
+The original linked-tab mockups are design references. The public app does not accept provider keys in a browser. The older content studio is preserved at `studio.html`, available only on the local server.
 
-```dotenv
-SPEECH_KEY=your-azure-speech-resource-key
-SPEECH_REGION=your-resource-region
-OPENAI_API_KEY=your-openai-project-key
-OPENAI_MODEL=exact-model-id-available-to-your-project
-```
+## Boundaries
 
-Alternatively double-click `configure-services.cmd`; it prompts for keys without displaying them. The resulting local `.env` is plain text, ignored by Git, excluded from the classroom ZIP, and blocked by the local web server. Environment variables take precedence over `.env`. Restart the server after changing settings.
+- Original AI-assisted practice, not official exam questions, a full mock test, or a score predictor. TEPS questions/options have oral recordings; visible options are explicitly a learning aid. TOEIC Part 2 also has spoken options.
+- The short fixed bank is a demo: 12 diagnostic questions, 12 transfer questions, and linked practice for each diagnostic item. Repeating a pack repeats its questions.
+- Synthesis has preselected locale voices and a cached manifest, not verified human accent ratings. Auditory quality and level need human review.
+- Progress is browser-local; export JSON includes exact learner actions, AI responses when used, and content snapshot. No cross-device account or payment service.
+- A demo code gates audio and APIs. Public landing assets and practice source files contain no secrets. Public AI is limited to known trainer items, 3 calls/minute/session and 100 calls per server run, with one concurrent provider request. Limits bound requests, not monetary spend. Keys/evidence/host tools are not served.
+- Public mode is a temporary classroom setup, not production hosting. Keep this PC powered on and connected.
 
-Audio generation checks Azure's voice list before synthesis. US: Jenny/Guy; UK: Sonia/Ryan; AU: Natasha/William. Dialogues use two voices. API model versions are recorded only when returned; a locale/voice name is not a verified accent-quality rating.
+## Evidence and assessment
 
-```text
-python tools/generate_audio.py
-python tools/generate_audio.py --accent AU
-python tools/generate_audio.py --lesson reviewed-lesson.json
-```
+[Product and pedagogy](docs/PRODUCT.md) · [presentation plan](docs/PRESENTATION.md) · [validation](docs/VALIDATION.md) · [experiment protocol](docs/EXPERIMENT.md).
 
-Repeated generation skips files whose SSML and audio hashes match. Azure requests may incur charges. Generate ahead of class, not during the demonstration. Custom lesson IDs and script text must exactly match the reviewed imported lesson for its audio to be selected.
-
-## Simplified interface
-
-The opening screen shows a lesson selector, accent selector and Start button. Playback speed, time limit and learner goals are under Learning settings. Content preparation, experiment evidence and classroom readiness are in the Tools menu. Results keep scripts and AI questions collapsed until needed.
-
-## What is implemented
-
-- Three original practice texts: business scheduling, hotel dialogue, commencement-style speech. Each has two listening and two context questions, Korean translations, answer explanations and evidence.
-- An explicit B1–B2 target profile; profile selection records goals but does not claim CEFR diagnosis or rewrite lessons.
-- Exact-locale browser speech or pre-generated Azure MP3s; no silent accent fallback. Reading fallback is explicitly labeled and excluded from listening interpretation.
-- Untimed practice by default; optional 5/3-second context questions. Readiness button, keyboard shortcuts, paused timing on hidden tabs, and untimed follow-ups.
-- Rule-based follow-ups selected from missed skill categories; new challenge items when all initial answers are correct. This is not an AI-generated adaptive testing model.
-- Per-session snapshots: passage, all questions/answers, actual voice, rate, replay events, time limits, response times, reading mode and learner goals.
-- Prepared explanations and optional live OpenAI coaching through a local backend. The browser never receives API keys.
-- Optional AI draft generation from a supplied source. Original passage/source changes and invalid schemas are rejected. Human review is required before adding lessons. Original AI output remains in evidence.
-- Optional external Whisper transcript import with separate original and human-checked text; AI grammar/word-choice feedback. No built-in audio transcription, pronunciation scoring or microphone capture.
-- Browser-local records and JSON export; server-side exact API requests and unmodified response bodies in `.local/evidence`.
-
-## Limits to present honestly
-
-This is formative practice, not a standardized TOEIC/IELTS assessment, a CEFR test, or a causal learning study. Built-in texts are original AI-assisted drafts, not authentic TED excerpts. Human review and a learner pilot are still needed. Static answer keys are visible in source and are suitable for practice only.
-
-Small question counts, practice effects, different passage difficulty, speaker identity, synthesized prosody, response timing and recognition errors can all confound results. Scores are shown per session, not as an accent ranking. A user-entered transcript cannot establish pronunciation or intelligibility. The software does not invent experiment results or exact model provenance it cannot verify.
-
-## Repository structure
-
-- `assets/data.js` — lesson and follow-up bank; `lessons.json` is its generated snapshot for Python audio preparation.
-- `assets/core.js` — validation and adaptation rules; `app.js` — views and learner flow; `style.css` — responsive interface.
-- `assets/audio-manifest.js` — audio metadata; `assets/audio/` — generated MP3s.
-- `server.py` — localhost-only backend; only allowlisted UI assets are served.
-- `tools/` — credentials setup, pre-generation and portable packaging.
-- `docs/` — classroom instructions, presentation plan, evidence protocol and preserved initial prototype.
-- `.local/evidence/` — private API/synthesis records (not distributed).
-
-After changing `data.js`, regenerate its JSON snapshot:
-
-```text
-node -e "const fs=require('fs'),vm=require('vm');const c={window:{}};vm.runInNewContext(fs.readFileSync('assets/data.js','utf8'),c);fs.writeFileSync('assets/lessons.json',JSON.stringify(c.window.AEL_DATA,null,2));"
-```
-
-## Validation
-
-```text
-node tests/core.test.cjs
-python -m unittest discover -s tests -p test_*.py -v
-```
-
-Automated tests use mocked OpenAI responses; they do not prove live API access, actual accent quality, classroom speaker output or learning effectiveness. See `docs/VALIDATION.md` for the actual verification record.
-
-## Integration references
-
-- [Azure text-to-speech REST API](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-text-to-speech)
-- [OpenAI Responses API](https://developers.openai.com/api/reference/resources/responses/methods/create)
-
-Implementation reference check: November 24, 2026. Do not expose the localhost AI endpoint publicly without adding authentication and usage controls.
+Checks: `python -m unittest discover -s tests -p "test_*.py"` and `node --test tests/core.test.cjs tests/trainer.test.cjs`.

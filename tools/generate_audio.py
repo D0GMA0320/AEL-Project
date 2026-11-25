@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from xml.sax.saxutils import escape
@@ -56,12 +57,15 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lesson', type=Path, help='Optional human-reviewed custom lesson JSON')
     parser.add_argument('--accent', choices=list(VOICES), action='append', help='Generate only selected accents; repeat flag for more')
+    parser.add_argument('--trainer', action='store_true', help='Generate the exam trainer and linked practice clips')
     args = parser.parse_args()
     load_env()
     key, region = os.environ.get('SPEECH_KEY'), os.environ.get('SPEECH_REGION', '')
     validate_credentials(key, region)
     if args.lesson:
         lessons = [json.loads(args.lesson.read_text(encoding='utf-8-sig'))]
+    elif args.trainer:
+        lessons = json.loads((ROOT / 'assets' / 'trainer-clips.json').read_text(encoding='utf-8'))['lessons']
     else:
         # data.js uses JS object syntax; export the content through the bundled Node-free JSON snapshot.
         lessons = json.loads((ROOT / 'assets' / 'lessons.json').read_text(encoding='utf-8'))['lessons']
@@ -96,8 +100,16 @@ def main():
             request = urllib.request.Request(base + '/cognitiveservices/v1', data=ssml.encode('utf-8'), headers={**headers,
                 'Content-Type':'application/ssml+xml', 'X-Microsoft-OutputFormat':'audio-24khz-48kbitrate-mono-mp3', 'User-Agent':'AELClassroom'}, method='POST')
             print('Requesting audio:', lesson['id'], accent)
-            with urllib.request.urlopen(request, timeout=60) as response:
-                audio = response.read()
+            for attempt in range(3):
+                try:
+                    with urllib.request.urlopen(request, timeout=60) as response:
+                        audio = response.read()
+                    break
+                except urllib.error.HTTPError as error:
+                    if error.code != 429 or attempt == 2:
+                        raise
+                    print('Azure rate limit; waiting 30 seconds before retry.', flush=True)
+                    time.sleep(30)
             if len(audio) < 100:
                 raise ValueError('Azure returned an empty or unexpectedly short audio file')
             path = audio_dir / f'{lesson["id"]}-{accent}.mp3'
@@ -113,6 +125,8 @@ def main():
                 'originalSSML':ssml, 'outputMetadata':entry, 'verification':'Human listening review pending'}
             (evidence_dir / f'azure-{lesson["id"]}-{accent}-{digest[:12]}.json').write_text(json.dumps(evidence, ensure_ascii=False, indent=2), encoding='utf-8')
             print('Generated:', path.name, '(listen and verify before class)')
+            # Free F0 allows 20 synthesis transactions per minute.
+            time.sleep(3.2)
     print('Done. Rebuild the portable ZIP after verifying the recordings.')
 
 
